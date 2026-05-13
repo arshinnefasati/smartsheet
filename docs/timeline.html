@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PID-0090-Network Infrastructure Upgrade — Timeline</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Calibri, 'Segoe UI', Arial, sans-serif;
+    background: #F6F0E2;
+    padding: 28px 36px 36px;
+  }
+  h2 { color: #000000; font-size: 15px; margin-bottom: 2px; font-weight: 700; }
+  p.sub { font-size: 10.5px; color: #666; margin-bottom: 22px; }
+  #chart { overflow-x: auto; }
+  svg { display: block; }
+</style>
+</head>
+<body>
+
+<h2>PID-0090-Network Infrastructure Upgrade — Timeline</h2>
+<p class="sub">Generated 5/13/2026 from Smartsheet data.</p>
+<div id="chart"></div>
+
+<script>
+const TASKS = [
+  {
+    "n": "Project Kickoff",
+    "d": "2026-03-01",
+    "p": "above",
+    "m": true,
+    "done": true
+  },
+  {
+    "n": "Discovery &\nRequirements",
+    "d": "2026-03-31",
+    "p": "below",
+    "m": false,
+    "done": true
+  },
+  {
+    "n": "Network Architecture\nDesign",
+    "d": "2026-04-30",
+    "p": "above",
+    "m": false,
+    "done": true
+  },
+  {
+    "n": "Design Review &\nApproval",
+    "d": "2026-04-30",
+    "p": "below",
+    "m": true,
+    "done": true
+  },
+  {
+    "n": "Core Infrastructure\nBuild",
+    "d": "2026-06-15",
+    "p": "above",
+    "m": false,
+    "done": false
+  },
+  {
+    "n": "Security Configuration",
+    "d": "2026-06-30",
+    "p": "below",
+    "m": false,
+    "done": false
+  },
+  {
+    "n": "Integration Testing\nBegin",
+    "d": "2026-06-30",
+    "p": "above",
+    "m": false,
+    "done": false
+  },
+  {
+    "n": "Integration Complete",
+    "d": "2026-06-30",
+    "p": "below",
+    "m": true,
+    "done": false
+  },
+  {
+    "n": "User Acceptance\nTesting",
+    "d": "2026-07-31",
+    "p": "above",
+    "m": false,
+    "done": false
+  },
+  {
+    "n": "Performance & Load\nTesting",
+    "d": "2026-08-15",
+    "p": "below",
+    "m": false,
+    "done": false
+  },
+  {
+    "n": "UAT Sign-off",
+    "d": "2026-08-15",
+    "p": "above",
+    "m": true,
+    "done": false
+  },
+  {
+    "n": "Production Deployment",
+    "d": "2026-09-30",
+    "p": "below",
+    "m": false,
+    "done": false
+  },
+  {
+    "n": "Go Live",
+    "d": "2026-10-01",
+    "p": "above",
+    "m": true,
+    "done": false
+  },
+  {
+    "n": "Post-Implementation\nReview",
+    "d": "2026-11-30",
+    "p": "below",
+    "m": false,
+    "done": false
+  },
+  {
+    "n": "Project Closeout",
+    "d": "2026-12-15",
+    "p": "above",
+    "m": true,
+    "done": false
+  }
+];
+
+const W      = 1150;
+const H      = 370;
+const ML     = 40;
+const MR     = 40;
+const TLW    = W - ML - MR;
+
+const BAR_Y  = 168;
+const BAR_H  = 26;
+const BMID   = BAR_Y + BAR_H / 2;
+
+const T0     = new Date("2026-03-01");
+const T1     = new Date("2026-12-31");
+const TSPAN  = T1 - T0;
+
+const TODAY  = new Date("2026-05-13");
+
+const LVL    = [55, 100, 145];
+const LH     = 13;
+const FS     = 10.5;
+const MIN_GAP= 56;
+
+const NAVY   = "#000000";
+const BLUE   = "#0089EC";
+const GREEN  = "#00B845";
+const RED    = "#EE001E";
+const YELLOW = "#F8FF3C";
+
+function dateX(dateStr) {
+  return ML + ((new Date(dateStr) - T0) / TSPAN) * TLW;
+}
+function fmt(dateStr) {
+  const d = new Date(dateStr);
+  return `${d.getMonth()+1}/${String(d.getFullYear()).slice(2)}`;
+}
+
+TASKS.sort((a, b) => new Date(a.d) - new Date(b.d));
+const slotRight = { above: [], below: [] };
+
+TASKS.forEach(t => {
+  const x   = dateX(t.d);
+  const arr = slotRight[t.p];
+  let lvl   = -1;
+  for (let i = 0; i < arr.length; i++) {
+    if (x - arr[i] >= MIN_GAP) { lvl = i; arr[i] = x; break; }
+  }
+  if (lvl === -1) { lvl = arr.length; arr.push(x); }
+  t.lvl = Math.min(lvl, LVL.length - 1);
+});
+
+const E = [];
+const o = s => E.push(s);
+
+function diamond(cx, cy, r, color) {
+  o(`<polygon points="${cx},${cy-r} ${cx+r},${cy} ${cx},${cy+r} ${cx-r},${cy}" fill="${color}"/>`);
+}
+function text(x, y, txt, size, color, weight, anchor) {
+  const fw = weight || "normal";
+  const ta = anchor || "middle";
+  o(`<text x="${x}" y="${y}" text-anchor="${ta}" font-size="${size}" font-weight="${fw}" fill="${color}" font-family="Calibri,Arial,sans-serif">${txt}</text>`);
+}
+function dateBox(cx, cy, txt) {
+  const bw = txt.length * 6.8 + 14;
+  const bh = 16;
+  o(`<rect x="${(cx - bw/2).toFixed(1)}" y="${(cy - 12).toFixed(1)}" width="${bw.toFixed(1)}" height="${bh}" rx="3" fill="${YELLOW}"/>`);
+  o(`<text x="${cx}" y="${cy}" text-anchor="middle" font-size="10" font-weight="bold" fill="#000000" font-family="Calibri,Arial,sans-serif">${txt}</text>`);
+}
+
+o(`<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">`);
+o(`<rect width="${W}" height="${H}" fill="#F6F0E2"/>`);
+o(`<rect x="${ML}" y="${BAR_Y}" width="${TLW}" height="${BAR_H}" fill="${NAVY}" rx="4"/>`);
+
+const todayX = Math.min(dateX(TODAY.toISOString().slice(0,10)), ML + TLW);
+o(`<line x1="${ML}" y1="${BMID}" x2="${todayX}" y2="${BMID}" stroke="${RED}" stroke-width="5" stroke-linecap="round"/>`);
+
+const MONTHS_LBL = ["","","","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const startM = T0.getMonth() + 1;
+const endM   = T1.getMonth() + 1;
+const startY = T0.getFullYear();
+const endY   = T1.getFullYear();
+for (let yr = startY; yr <= endY; yr++) {
+  const mStart = (yr === startY) ? startM : 1;
+  const mEnd   = (yr === endY)   ? endM   : 12;
+  for (let m = mStart; m <= mEnd; m++) {
+    const d1  = new Date(yr, m - 1, 1);
+    const d2  = new Date(yr, m,     0);
+    const x1  = ML + ((d1 - T0) / TSPAN) * TLW;
+    const x2  = ML + ((d2 - T0) / TSPAN) * TLW;
+    const cx  = (x1 + x2) / 2;
+    if (d1 > T0) {
+      o(`<line x1="${x1}" y1="${BAR_Y+4}" x2="${x1}" y2="${BAR_Y+BAR_H-4}" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>`);
+    }
+    const lbl = MONTHS_LBL[m] || String(m);
+    text(cx, BMID + 4, lbl, 11, "white", "bold");
+  }
+}
+
+TASKS.forEach(t => {
+  const tx    = dateX(t.d);
+  const above = t.p === "above";
+  const DR    = t.m ? 9 : 7;
+  const color = t.done ? GREEN : (above ? BLUE : GREEN);
+  const stem  = LVL[t.lvl];
+  const lines = t.n.split("\n");
+  const dateStr = fmt(t.d);
+
+  const sy0 = above ? BAR_Y : BAR_Y + BAR_H;
+  const sy1 = above ? BAR_Y - stem : BAR_Y + BAR_H + stem;
+  o(`<line x1="${tx}" y1="${sy0}" x2="${tx}" y2="${sy1}" stroke="${color}" stroke-width="1.3"/>`);
+  diamond(tx, sy0, DR, color);
+
+  if (above) {
+    const nameBtm = sy1 - 5;
+    for (let li = 0; li < lines.length; li++) {
+      const y = nameBtm - (lines.length - 1 - li) * LH;
+      text(tx, y, lines[li], FS, "#1a1a1a");
+    }
+    dateBox(tx, nameBtm - lines.length * LH - 3, dateStr);
+  } else {
+    const nameTop = sy1 + 5;
+    for (let li = 0; li < lines.length; li++) {
+      text(tx, nameTop + (li + 1) * LH, lines[li], FS, "#1a1a1a");
+    }
+    dateBox(tx, nameTop + (lines.length + 1) * LH + 2, dateStr);
+  }
+});
+
+o(`</svg>`);
+document.getElementById("chart").innerHTML = E.join("");
+</script>
+
+<div style="margin-top:16px; display:flex; gap:28px; font-size:10.5px; color:#000000; flex-wrap:wrap;">
+  <span style="display:flex;align-items:center;gap:6px;">
+    <svg width="14" height="14"><polygon points="7,0 14,7 7,14 0,7" fill="#0089EC"/></svg>
+    Not Started (above bar)
+  </span>
+  <span style="display:flex;align-items:center;gap:6px;">
+    <svg width="14" height="14"><polygon points="7,0 14,7 7,14 0,7" fill="#00B845"/></svg>
+    Not Started (below bar) / Complete
+  </span>
+  <span style="display:flex;align-items:center;gap:6px;">
+    <svg width="40" height="14"><line x1="0" y1="7" x2="40" y2="7" stroke="#EE001E" stroke-width="4"/></svg>
+    Progress to today
+  </span>
+  <span style="display:flex;align-items:center;gap:6px;">
+    <svg width="32" height="16"><rect x="0" y="0" width="32" height="16" rx="3" fill="#F8FF3C"/></svg>
+    Date badge
+  </span>
+</div>
+
+</body>
+</html>
