@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BPE Report Builder</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f0f0f0;
+  color: #111;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 20px 60px;
+}
+
+/* ── Header ── */
+.header {
+  width: 100%; max-width: 800px;
+  display: flex; align-items: center; gap: 14px;
+  margin-bottom: 28px;
+}
+.vz-bar { width: 6px; height: 52px; background: #cd040b; border-radius: 3px; flex-shrink: 0; }
+.header h1 { font-size: 21px; font-weight: 700; }
+.header p  { font-size: 12px; color: #666; margin-top: 3px; }
+
+/* ── API status banner ── */
+.api-banner {
+  width: 100%; max-width: 800px;
+  padding: 10px 16px; border-radius: 8px;
+  font-size: 13px; font-weight: 600;
+  margin-bottom: 20px;
+  display: flex; align-items: center; gap: 10px;
+}
+.api-banner.ok     { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+.api-banner.blocked { background: #fff3cd; color: #856404; border: 1px solid #ffeeba; }
+.api-banner.checking { background: #e2e8f0; color: #555; border: 1px solid #cbd5e1; }
+
+/* ── Two-path layout ── */
+.paths {
+  width: 100%; max-width: 800px;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+  margin-bottom: 20px;
+}
+@media (max-width: 600px) { .paths { grid-template-columns: 1fr; } }
+
+.path-card {
+  background: #fff;
+  border-radius: 10px;
+  border: 2px solid #e0e0e0;
+  padding: 22px 24px;
+  transition: border-color .2s;
+}
+.path-card.active  { border-color: #cd040b; }
+.path-card.dimmed  { opacity: .55; }
+.path-card h3 {
+  font-size: 14px; font-weight: 700; margin-bottom: 4px;
+  display: flex; align-items: center; gap: 8px;
+}
+.path-badge {
+  font-size: 10px; font-weight: 700; padding: 2px 7px;
+  border-radius: 10px; text-transform: uppercase; letter-spacing: .5px;
+}
+.badge-auto { background: #d4edda; color: #155724; }
+.badge-manual { background: #dbeafe; color: #1e40af; }
+.path-card p { font-size: 12px; color: #666; margin-bottom: 14px; line-height: 1.5; }
+
+/* path A — API */
+.api-section { display: flex; flex-direction: column; gap: 8px; }
+.api-section select, .api-section input[type=text] {
+  width: 100%; padding: 9px 11px;
+  border: 1.5px solid #ddd; border-radius: 6px;
+  font-size: 12px; outline: none;
+  transition: border-color .15s;
+}
+.api-section select:focus, .api-section input[type=text]:focus { border-color: #cd040b; }
+.row2 { display: flex; gap: 8px; }
+.row2 input { flex: 1; }
+.small-btn {
+  padding: 8px 12px; background: #222; color: #fff;
+  border: none; border-radius: 6px; font-size: 12px;
+  font-weight: 600; cursor: pointer; white-space: nowrap;
+}
+.small-btn:hover { background: #444; }
+.hint { font-size: 11px; color: #888; margin-top: 2px; }
+.hint.ok    { color: #155724; }
+.hint.error { color: #dc2626; }
+
+/* path B — xlsx upload */
+.upload-zone {
+  border: 2px dashed #ccc; border-radius: 8px;
+  padding: 18px 14px; text-align: center; cursor: pointer;
+  font-size: 12px; color: #777;
+  transition: border-color .2s, background .2s;
+}
+.upload-zone:hover, .upload-zone.drag { border-color: #cd040b; background: #fff5f5; color: #cd040b; }
+.upload-zone.loaded { border-color: #16a34a; background: #f0fdf4; color: #15803d; font-weight: 600; }
+#xlsxInput { display: none; }
+
+/* ── Generate button ── */
+.generate-wrap { width: 100%; max-width: 800px; margin-bottom: 20px; }
+#generateBtn {
+  width: 100%; padding: 16px; background: #cd040b; color: #fff;
+  border: none; border-radius: 8px; font-size: 16px; font-weight: 700;
+  cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px;
+  transition: background .2s;
+}
+#generateBtn:hover:not(:disabled) { background: #a80309; }
+#generateBtn:disabled { background: #999; cursor: not-allowed; }
+.spinner {
+  width: 18px; height: 18px; border: 3px solid rgba(255,255,255,.4);
+  border-top-color: #fff; border-radius: 50%;
+  animation: spin .7s linear infinite; display: none;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── Log ── */
+#log {
+  width: 100%; max-width: 800px;
+  background: #1e1e1e; color: #d4d4d4;
+  border-radius: 8px; padding: 14px 16px;
+  font-family: monospace; font-size: 12px; line-height: 1.6;
+  white-space: pre-wrap; max-height: 160px; overflow-y: auto;
+  margin-bottom: 16px; display: none;
+}
+
+/* ── Result card ── */
+.result-card {
+  width: 100%; max-width: 800px;
+  background: #fff; border-radius: 10px;
+  border: 2px solid #16a34a;
+  padding: 24px 28px; margin-bottom: 20px;
+  display: none;
+}
+.result-card.error { border-color: #dc2626; }
+.result-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 12px; }
+.result-meta { font-size: 13px; color: #555; margin-bottom: 18px; line-height: 1.7; }
+.result-meta b { color: #111; }
+.dl-row { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; }
+.dl-btn {
+  padding: 10px 18px; border-radius: 6px; font-size: 13px; font-weight: 700;
+  text-decoration: none; color: #fff; cursor: pointer; border: none; display: inline-block;
+}
+.dl-pptx { background: #2563eb; }
+.dl-html  { background: #7c3aed; }
+.dl-pdf   { background: #16a34a; }
+.dl-pdf.disabled { background: #aaa; cursor: default; font-size: 12px; padding: 10px 14px; }
+
+/* ── Dashboard push section ── */
+.push-section {
+  border-top: 1px solid #eee; padding-top: 16px;
+  margin-top: 4px;
+}
+.push-section h4 { font-size: 13px; font-weight: 700; margin-bottom: 10px; color: #333; }
+.push-row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 6px; }
+.push-row input {
+  flex: 1; min-width: 180px; padding: 8px 10px;
+  border: 1.5px solid #ddd; border-radius: 6px; font-size: 12px; outline: none;
+}
+.push-row input:focus { border-color: #7c3aed; }
+.push-btn {
+  padding: 8px 14px; background: #7c3aed; color: #fff;
+  border: none; border-radius: 6px; font-size: 12px;
+  font-weight: 600; cursor: pointer; white-space: nowrap;
+}
+.push-btn:hover { background: #6d28d9; }
+.push-note { font-size: 11px; color: #888; line-height: 1.5; }
+.push-note code { background: #f3f3f3; padding: 1px 5px; border-radius: 3px; font-size: 11px; }
+
+/* ── Previous reports ── */
+.prev-card {
+  width: 100%; max-width: 800px;
+  background: #fff; border-radius: 10px; border: 1px solid #e0e0e0;
+  padding: 22px 28px;
+}
+.prev-card h3 { font-size: 14px; font-weight: 700; margin-bottom: 14px;
+  border-bottom: 2px solid #cd040b; padding-bottom: 8px; }
+.prev-list { list-style: none; }
+.prev-list li {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 7px 0; border-bottom: 1px solid #f0f0f0; font-size: 13px;
+}
+.prev-list li:last-child { border-bottom: none; }
+.prev-list a { color: #2563eb; text-decoration: none; font-weight: 600; }
+.prev-list a:hover { text-decoration: underline; }
+.prev-list .sz { color: #aaa; font-size: 11px; }
+
+footer { margin-top: 36px; font-size: 11px; color: #bbb; text-align: center; }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <div class="vz-bar"></div>
+  <div>
+    <h1>BPE Report Builder</h1>
+    <p>Auto-generate One Page VP Status Summary + Timeline HTML from Smartsheet data</p>
+  </div>
+</div>
+
+<!-- API status banner -->
+<div class="api-banner checking" id="apiBanner">
+  ⏳ Checking Smartsheet API connection…
+</div>
+
+<!-- Two-path cards -->
+<div class="paths">
+
+  <!-- Path A: API -->
+  <div class="path-card" id="pathA">
+    <h3>
+      Path A — Live API
+      <span class="path-badge badge-auto">Auto</span>
+    </h3>
+    <p>Reads live data from Smartsheet.<br>API requires VPN off. Published URLs (<code>/b/publish</code>) work with VPN on — no API key needed.</p>
+    <div class="api-section">
+      <div class="row2">
+        <select id="sheetSelect">
+          <option value="">— Select a project sheet —</option>
+        </select>
+        <button class="small-btn" onclick="loadSheets()">⟳ Load</button>
+      </div>
+      <div class="row2">
+        <input type="text" id="sheetUrl" placeholder="Paste sheet, dashboard, or /b/publish URL">
+        <button class="small-btn" onclick="resolveUrl()">→ Use</button>
+      </div>
+      <p class="hint" id="resolveHint"></p>
+    </div>
+  </div>
+
+  <!-- Path B: xlsx upload -->
+  <div class="path-card active" id="pathB">
+    <h3>
+      Path B — Upload xlsx
+      <span class="path-badge badge-manual">Manual</span>
+    </h3>
+    <p>Export from Smartsheet → upload here.<br>Works with VPN on. No API key needed.</p>
+    <div class="upload-zone" id="uploadZone"
+         onclick="document.getElementById('xlsxInput').click()"
+         ondragover="event.preventDefault();this.classList.add('drag')"
+         ondragleave="this.classList.remove('drag')"
+         ondrop="handleDrop(event)">
+      📂 Click or drag &amp; drop Smartsheet xlsx export
+    </div>
+    <input type="file" id="xlsxInput" accept=".xlsx" onchange="handleFileSelect(this)">
+    <p class="hint" id="uploadHint" style="margin-top:6px">No file loaded — will use default demo data</p>
+    <p class="hint" style="margin-top:4px">
+      In Smartsheet: <b>File → Export → Export to Excel</b>
+    </p>
+  </div>
+
+</div>
+
+<!-- Generate button -->
+<div class="generate-wrap">
+  <button id="generateBtn" onclick="generate()">
+    <div class="spinner" id="spinner"></div>
+    <span id="btnText">⚡ Generate Report</span>
+  </button>
+</div>
+
+<!-- Log -->
+<div id="log"></div>
+
+<!-- Result -->
+<div class="result-card" id="resultCard">
+  <h3 id="resultTitle"></h3>
+  <div class="result-meta" id="resultMeta"></div>
+  <div class="dl-row" id="dlRow"></div>
+  <div class="push-section" id="pushSection" style="display:none">
+    <h4>📌 Push Timeline to Smartsheet Dashboard</h4>
+    <div class="push-row">
+      <input type="text" id="publicUrl" placeholder="Public URL hosting the timeline (SharePoint, etc.)">
+      <input type="text" id="dashUrl"   placeholder="https://app.smartsheet.com/dashboards/...">
+      <button class="push-btn" onclick="pushToDashboard()">→ Push to Dashboard</button>
+    </div>
+    <p class="push-note" id="pushHint">
+      Host the Timeline HTML on SharePoint/OneDrive → paste the sharing link above, add your dashboard URL → click Push.<br>
+      <b>If API available:</b> also works with <code>ngrok http 5001</code> → paste ngrok URL.
+    </p>
+  </div>
+</div>
+
+<!-- Previous reports -->
+<div class="prev-card">
+  <h3>Previous Reports</h3>
+  <ul class="prev-list" id="prevList">
+    <li><span style="color:#aaa">Loading…</span></li>
+  </ul>
+</div>
+
+<footer>BPE Report Builder · Mode: {{ mode }} · AI: {{ ai_on }}</footer>
+
+<script>
+let uploadedFile   = null;
+let publishedUrl   = null;
+let lastTimelineHtml = null;
+
+// ── API connectivity check ─────────────────────────────────────────────────────
+async function checkApi() {
+  const banner = document.getElementById("apiBanner");
+  const pathA  = document.getElementById("pathA");
+  try {
+    const res  = await fetch("/sheets");
+    const data = await res.json();
+    if (data.error && (data.error.includes("Connection") || data.error.includes("SSL") || data.error.includes("urlopen"))) {
+      banner.className = "api-banner blocked";
+      banner.textContent = "⚠️  Smartsheet API blocked — VPN is active. Use Path B (xlsx upload) or turn VPN off to use Path A.";
+      pathA.classList.add("dimmed");
+    } else if (data.error) {
+      banner.className = "api-banner blocked";
+      banner.textContent = "⚠️  API error: " + data.error;
+      pathA.classList.add("dimmed");
+    } else {
+      banner.className = "api-banner ok";
+      banner.textContent = "✅  Smartsheet API connected — " + (data.sheets?.length || 0) + " sheets found. Path A is ready.";
+      pathA.classList.add("active");
+      pathA.classList.remove("dimmed");
+      // Auto-populate sheet dropdown
+      const sel = document.getElementById("sheetSelect");
+      sel.innerHTML = '<option value="">— Select a project sheet —</option>' +
+        (data.sheets || []).map(s => `<option value="${s.id}">${s.name}</option>`).join("");
+    }
+  } catch(e) {
+    banner.className = "api-banner blocked";
+    banner.textContent = "⚠️  Cannot reach Smartsheet API. Use Path B.";
+    pathA.classList.add("dimmed");
+  }
+}
+
+// ── Load sheets ────────────────────────────────────────────────────────────────
+async function loadSheets() {
+  const sel = document.getElementById("sheetSelect");
+  sel.innerHTML = '<option value="">Loading…</option>';
+  await checkApi();
+}
+
+// ── Resolve pasted URL ─────────────────────────────────────────────────────────
+async function resolveUrl() {
+  const url  = document.getElementById("sheetUrl").value.trim();
+  const hint = document.getElementById("resolveHint");
+  if (!url) { hint.textContent = "Paste a URL first."; hint.className = "hint error"; return; }
+
+  // Published URL — no API key or VPN needed; handle client-side
+  if (url.includes("/b/publish")) {
+    publishedUrl = url;
+    uploadedFile = null;
+    document.getElementById("sheetSelect").value = "";
+    document.getElementById("uploadZone").textContent = "📂 Click or drag & drop Smartsheet xlsx export";
+    document.getElementById("uploadZone").classList.remove("loaded");
+    document.getElementById("uploadHint").textContent = "Published URL set — no API key needed";
+    hint.textContent = "✅ Published Smartsheet URL stored — works with VPN on, no API key needed.";
+    hint.className = "hint ok";
+    return;
+  }
+
+  publishedUrl = null;
+  hint.textContent = "Resolving…"; hint.className = "hint";
+  try {
+    const res  = await fetch("/resolve", { method: "POST", headers: {"Content-Type":"application/json"}, body: JSON.stringify({url}) });
+    const data = await res.json();
+    if (data.error) { hint.textContent = "⚠️ " + data.error; hint.className = "hint error"; return; }
+    const sel = document.getElementById("sheetSelect");
+    let found = false;
+    for (const opt of sel.options) { if (String(opt.value) === String(data.sheet_id)) { sel.value = opt.value; found = true; break; } }
+    if (!found) { const o = document.createElement("option"); o.value = data.sheet_id; o.textContent = data.name; sel.appendChild(o); sel.value = data.sheet_id; }
+    hint.textContent = "✅ " + data.name + " (ID: " + data.sheet_id + ")";
+    hint.className = "hint ok";
+    uploadedFile = null;
+    document.getElementById("uploadZone").textContent = "📂 Click or drag & drop Smartsheet xlsx export";
+    document.getElementById("uploadZone").classList.remove("loaded");
+    document.getElementById("uploadHint").textContent = "Sheet URL resolved — API will be used";
+  } catch(e) { hint.textContent = "❌ " + e; hint.className = "hint error"; }
+}
+
+// ── xlsx upload ────────────────────────────────────────────────────────────────
+function handleFileSelect(input) { if (input.files?.[0]) setUploadFile(input.files[0]); }
+function handleDrop(e) {
+  e.preventDefault();
+  document.getElementById("uploadZone").classList.remove("drag");
+  const f = e.dataTransfer.files[0];
+  if (f?.name.endsWith(".xlsx")) setUploadFile(f);
+  else document.getElementById("uploadHint").textContent = "⚠️ Please drop an .xlsx file";
+}
+async function setUploadFile(file) {
+  const zone = document.getElementById("uploadZone");
+  const hint = document.getElementById("uploadHint");
+  hint.textContent = "Uploading…";
+  const fd = new FormData(); fd.append("file", file);
+  try {
+    const res  = await fetch("/upload", { method: "POST", body: fd });
+    const data = await res.json();
+    if (data.ok) {
+      uploadedFile = data.filename;
+      zone.textContent = "✅ " + file.name;
+      zone.classList.add("loaded");
+      hint.textContent = data.project + " · " + data.tasks + " tasks · " + data.milestones + " milestones";
+      hint.className = "hint ok";
+      document.getElementById("sheetSelect").value = "";
+    } else {
+      hint.textContent = "❌ " + data.error; hint.className = "hint error";
+    }
+  } catch(e) { hint.textContent = "❌ " + e; hint.className = "hint error"; }
+}
+
+// ── Generate ───────────────────────────────────────────────────────────────────
+async function generate() {
+  const btn   = document.getElementById("generateBtn");
+  const spin  = document.getElementById("spinner");
+  const btext = document.getElementById("btnText");
+  const log   = document.getElementById("log");
+  const card  = document.getElementById("resultCard");
+
+  btn.disabled = true; spin.style.display = "block";
+  btext.textContent = "Generating…";
+  log.style.display = "block"; log.textContent = "";
+  card.style.display = "none";
+
+  const steps = [
+    "[1/5] Fetching project data…",
+    "[2/5] Building timeline…",
+    "[3/5] Writing status text…",
+    "[4/5] Building PPTX…",
+    "[5/5] Exporting timeline HTML…",
+  ];
+  let i = 0;
+  const tick = setInterval(() => { if (i < steps.length) { log.textContent += steps[i++] + "\n"; log.scrollTop = 9999; } }, 800);
+
+  const sheetId = document.getElementById("sheetSelect").value || null;
+  try {
+    const res  = await fetch("/generate", {
+      method: "POST", headers: {"Content-Type":"application/json"},
+      body: JSON.stringify({ sheet_id: sheetId, uploaded_file: uploadedFile, published_url: publishedUrl }),
+    });
+    const data = await res.json();
+    clearInterval(tick);
+
+    if (data.ok) {
+      log.textContent += "\n✅ Done — " + data.project + " · " + data.tasks + " tasks · " + data.milestones + " milestones · source: " + data.source;
+      lastTimelineHtml = data.timeline_html;
+
+      document.getElementById("resultTitle").textContent = "✅ Report Ready — " + data.project;
+      document.getElementById("resultMeta").innerHTML =
+        "<b>Project:</b> " + data.project + "<br>" +
+        "<b>Tasks:</b> " + data.tasks + " &nbsp;|&nbsp; <b>Milestones:</b> " + data.milestones + "<br>" +
+        "<b>Source:</b> " + data.source;
+
+      const dlRow = document.getElementById("dlRow");
+      dlRow.innerHTML =
+        `<a class="dl-btn dl-pptx" href="/download/${encodeURIComponent(data.pptx)}">⬇ Download PPTX</a>` +
+        (data.has_pdf
+          ? `<a class="dl-btn dl-pdf" href="/download/${encodeURIComponent(data.pdf)}">⬇ Download PDF</a>`
+          : `<span class="dl-btn dl-pdf disabled">PDF: open PPTX in Google Slides → Export as PDF</span>`) +
+        (data.timeline_html
+          ? `<a class="dl-btn dl-html" href="/download/${encodeURIComponent(data.timeline_html)}" target="_blank">⬇ Timeline HTML</a>`
+          : "");
+
+      if (data.timeline_html) {
+        document.getElementById("pushSection").style.display = "block";
+      }
+
+      card.className = "result-card"; card.style.display = "block";
+      loadReports();
+    } else {
+      log.textContent += "\n❌ Error: " + data.error;
+      document.getElementById("resultTitle").textContent = "❌ Generation Failed";
+      document.getElementById("resultMeta").innerHTML = `<pre style="font-size:11px;white-space:pre-wrap;color:#dc2626">${data.error}</pre>`;
+      document.getElementById("dlRow").innerHTML = "";
+      document.getElementById("pushSection").style.display = "none";
+      card.className = "result-card error"; card.style.display = "block";
+    }
+  } catch(e) {
+    clearInterval(tick);
+    log.textContent += "\n❌ Network error: " + e;
+  }
+  btn.disabled = false; spin.style.display = "none"; btext.textContent = "⚡ Generate Report";
+}
+
+// ── Push to Smartsheet dashboard ──────────────────────────────────────────────
+async function pushToDashboard() {
+  const pubUrl = document.getElementById("publicUrl").value.trim();
+  const dashUrl = document.getElementById("dashUrl").value.trim();
+  const hint = document.getElementById("pushHint");
+  if (!pubUrl) { hint.innerHTML = "⚠️ Enter the public URL where the timeline HTML is hosted."; return; }
+  if (!dashUrl) { hint.innerHTML = "⚠️ Enter your Smartsheet dashboard URL."; return; }
+  hint.innerHTML = "Pushing to dashboard…";
+  try {
+    const res  = await fetch("/push-dashboard", {
+      method: "POST", headers: {"Content-Type":"application/json"},
+      body: JSON.stringify({ dashboard_url: dashUrl, timeline_url: pubUrl, widget_title: "BPE Timeline" }),
+    });
+    const data = await res.json();
+    if (data.ok) hint.innerHTML = "✅ Timeline widget added/updated on your Smartsheet dashboard!";
+    else hint.innerHTML = "❌ " + data.error;
+  } catch(e) { hint.innerHTML = "❌ " + e; }
+}
+
+// ── Previous reports ───────────────────────────────────────────────────────────
+async function loadReports() {
+  const res   = await fetch("/reports");
+  const files = await res.json();
+  const ul = document.getElementById("prevList");
+  if (!files.length) { ul.innerHTML = '<li><span style="color:#aaa">No reports yet.</span></li>'; return; }
+  ul.innerHTML = files.map(f =>
+    `<li><a href="/download/${encodeURIComponent(f.name)}">${f.name}</a><span class="sz">${f.size_kb} KB</span></li>`
+  ).join("");
+}
+
+// ── Init ──────────────────────────────────────────────────────────────────────
+checkApi();
+loadReports();
+</script>
+</body>
+</html>

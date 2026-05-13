@@ -1,0 +1,18 @@
+# Never commit secrets
+.env
+
+# Generated output & uploads
+output/
+uploads/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+# Virtual environments
+venv/
+.venv/
