@@ -24,123 +24,91 @@
 const TASKS = [
   {
     "n": "Project Kickoff",
-    "d": "2026-03-01",
-    "s": "2026-03-01",
+    "d": "2025-01-14",
+    "s": "2025-01-08",
     "p": "above",
-    "m": true,
+    "m": false,
     "color": "#0089EC"
   },
   {
-    "n": "Discovery &\nRequirements",
-    "d": "2026-03-31",
-    "s": "2026-03-02",
+    "n": "Product Requirements\nReview",
+    "d": "2025-01-21",
+    "s": "2025-01-15",
     "p": "below",
     "m": false,
     "color": "#0089EC"
   },
   {
-    "n": "Network Architecture\nDesign",
-    "d": "2026-04-30",
-    "s": "2026-04-01",
+    "n": "Impact Alignment",
+    "d": "2025-01-28",
+    "s": "2025-01-22",
     "p": "above",
     "m": false,
     "color": "#0089EC"
   },
   {
-    "n": "Design Review &\nApproval",
-    "d": "2026-04-30",
-    "s": "2026-04-30",
+    "n": "Business Case Approved",
+    "d": "2025-03-14",
+    "s": "2025-03-14",
     "p": "below",
     "m": true,
     "color": "#0089EC"
   },
   {
-    "n": "Core Infrastructure\nBuild",
-    "d": "2026-06-15",
-    "s": "2026-05-01",
+    "n": "GTS RTE Assigned",
+    "d": "2025-09-12",
+    "s": "2025-09-08",
     "p": "above",
     "m": false,
-    "color": "#FFCD27"
+    "color": "#0089EC"
   },
   {
-    "n": "Security Configuration",
-    "d": "2026-06-30",
-    "s": "2026-05-15",
+    "n": "GN&T and GTS Dev /\nEngineering Engagement",
+    "d": "2026-02-03",
+    "s": "2025-02-24",
+    "p": "below",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "GTS Low Level Design\nand Grooming",
+    "d": "2026-03-13",
+    "s": "2026-02-02",
+    "p": "above",
+    "m": false,
+    "color": "#00B845"
+  },
+  {
+    "n": "TPD Low Level Design\nand Grooming",
+    "d": "2026-03-13",
+    "s": "2026-02-02",
     "p": "below",
     "m": false,
     "color": "#00B845"
   },
   {
-    "n": "Integration Testing\nBegin",
-    "d": "2026-06-30",
-    "s": "2026-06-01",
-    "p": "above",
-    "m": false,
-    "color": "#888888"
-  },
-  {
-    "n": "Integration Complete",
-    "d": "2026-06-30",
-    "s": "2026-06-30",
-    "p": "below",
-    "m": true,
-    "color": "#888888"
-  },
-  {
-    "n": "User Acceptance\nTesting",
-    "d": "2026-07-31",
-    "s": "2026-07-01",
-    "p": "above",
-    "m": false,
-    "color": "#888888"
-  },
-  {
-    "n": "Performance & Load\nTesting",
-    "d": "2026-08-15",
-    "s": "2026-07-15",
-    "p": "below",
-    "m": false,
-    "color": "#888888"
-  },
-  {
-    "n": "UAT Sign-off",
-    "d": "2026-08-15",
-    "s": "2026-08-15",
+    "n": "Committed Date - GTS\nReceived",
+    "d": "2026-05-15",
+    "s": "2026-05-15",
     "p": "above",
     "m": true,
-    "color": "#888888"
+    "color": "#0089EC"
   },
   {
-    "n": "Production Deployment",
-    "d": "2026-09-30",
-    "s": "2026-09-01",
+    "n": "Committed Date - TPD\nReceived",
+    "d": "2026-05-15",
+    "s": "2026-05-15",
     "p": "below",
-    "m": false,
-    "color": "#888888"
-  },
-  {
-    "n": "Go Live",
-    "d": "2026-10-01",
-    "s": "2026-10-01",
-    "p": "above",
     "m": true,
-    "color": "#888888"
+    "color": "#0089EC"
   },
   {
-    "n": "Post-Implementation\nReview",
-    "d": "2026-11-30",
-    "s": "2026-10-01",
-    "p": "below",
-    "m": false,
-    "color": "#888888"
-  },
-  {
-    "n": "Project Closeout",
-    "d": "2026-12-15",
-    "s": "2026-12-15",
+    "n": "Development",
+    "d": "2026-07-17",
+    "s": "2026-03-16",
     "p": "above",
-    "m": true,
-    "color": "#888888"
+    "m": false,
+    "color": "#00B845"
   }
 ];
 
@@ -154,7 +122,7 @@ const BAR_Y  = 165;
 const BAR_H  = 26;
 const BMID   = BAR_Y + BAR_H / 2;
 
-const T0     = new Date("2026-03-01");
+const T0     = new Date("2025-01-01");
 const T1     = new Date("2026-12-31");
 const TSPAN  = T1 - T0;
 
