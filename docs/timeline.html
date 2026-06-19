@@ -23,92 +23,748 @@
 <script>
 const TASKS = [
   {
+    "n": "Initiate",
+    "d": "2026-03-13",
+    "s": "2026-03-13",
+    "p": "above",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
     "n": "Project Kickoff",
-    "d": "2025-01-14",
-    "s": "2025-01-08",
+    "d": "2026-03-13",
+    "s": "2026-03-13",
+    "p": "below",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "VBG Product Security\n(contact provided through TPD FD)",
+    "d": "2026-03-13",
+    "s": "2026-03-13",
+    "p": "above",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "Project Start",
+    "d": "2026-03-13",
+    "s": "2026-03-13",
+    "p": "below",
+    "m": true,
+    "color": "#0089EC"
+  },
+  {
+    "n": "Ops and Support",
+    "d": "2026-03-16",
+    "s": "2026-03-16",
+    "p": "above",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "PM to insert relevant\noperations and support items here with appropriate predecessors",
+    "d": "2026-03-16",
+    "s": "2026-03-16",
+    "p": "below",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "Requirements",
+    "d": "2026-03-20",
+    "s": "2026-03-16",
     "p": "above",
     "m": false,
     "color": "#0089EC"
   },
   {
     "n": "Product Requirements\nReview",
-    "d": "2025-01-21",
-    "s": "2025-01-15",
+    "d": "2026-03-20",
+    "s": "2026-03-16",
     "p": "below",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "GTS Impact Confirmed",
+    "d": "2026-03-25",
+    "s": "2026-03-23",
+    "p": "above",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "TPD Impact Confirmed",
+    "d": "2026-03-25",
+    "s": "2026-03-23",
+    "p": "below",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "NP/NS Impact Confirmed",
+    "d": "2026-03-25",
+    "s": "2026-03-23",
+    "p": "above",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "HLA and T-Shirt Sizes",
+    "d": "2026-03-26",
+    "s": "2026-03-26",
+    "p": "below",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "HLA and T-Shirt Size -\nComplete GTS",
+    "d": "2026-03-26",
+    "s": "2026-03-26",
+    "p": "above",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "HLA and T-Shirt Size -\nComplete TPD",
+    "d": "2026-03-26",
+    "s": "2026-03-26",
+    "p": "below",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "HLA and T-Shirt Size -\nComplete NP",
+    "d": "2026-03-26",
+    "s": "2026-03-26",
+    "p": "above",
     "m": false,
     "color": "#0089EC"
   },
   {
     "n": "Impact Alignment",
-    "d": "2025-01-28",
-    "s": "2025-01-22",
+    "d": "2026-03-27",
+    "s": "2026-03-23",
+    "p": "below",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "Security Group Impact\nConfirmed",
+    "d": "2026-03-27",
+    "s": "2026-03-23",
     "p": "above",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "Compliance and Risk -\nManagement (CRM) submitted by Product Owner",
+    "d": "2026-03-30",
+    "s": "2026-03-30",
+    "p": "below",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "VCG / Consumer Product\nSecurity, if needed",
+    "d": "2026-03-30",
+    "s": "2026-03-26",
+    "p": "above",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "IT Security (IRM) - 2\nweeks SLA for IRM contact assignment",
+    "d": "2026-04-01",
+    "s": "2026-03-30",
+    "p": "below",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "Cloud Security",
+    "d": "2026-04-01",
+    "s": "2026-03-30",
+    "p": "above",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "Device Technology\nSecurity",
+    "d": "2026-04-01",
+    "s": "2026-03-30",
+    "p": "below",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "AWS Platform Security",
+    "d": "2026-04-01",
+    "s": "2026-03-30",
+    "p": "above",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "Public Sector Security",
+    "d": "2026-04-01",
+    "s": "2026-03-30",
+    "p": "below",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "PTAD Creation with\nCross Functional Input",
+    "d": "2026-04-09",
+    "s": "2026-03-27",
+    "p": "above",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "PTAD Ready for Network\nEngagement",
+    "d": "2026-04-09",
+    "s": "2026-04-09",
+    "p": "below",
+    "m": true,
+    "color": "#0089EC"
+  },
+  {
+    "n": "Submit and Schedule\nNetwork Planning Front Door Review",
+    "d": "2026-04-10",
+    "s": "2026-04-10",
+    "p": "above",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "Assignment of Network\nPlanner",
+    "d": "2026-04-13",
+    "s": "2026-04-13",
+    "p": "below",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "Network Planning\nEngagement",
+    "d": "2026-04-14",
+    "s": "2026-04-10",
+    "p": "above",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "Network Planning HLD",
+    "d": "2026-04-14",
+    "s": "2026-04-14",
+    "p": "below",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "Network Provisioning\nRequirements",
+    "d": "2026-04-14",
+    "s": "2026-04-14",
+    "p": "above",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "NRR Submitted",
+    "d": "2026-04-14",
+    "s": "2026-04-14",
+    "p": "below",
+    "m": true,
+    "color": "#0089EC"
+  },
+  {
+    "n": "PTAD with Cross Review\nFunctional",
+    "d": "2026-04-16",
+    "s": "2026-03-27",
+    "p": "above",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "PTAD Development\nContinues",
+    "d": "2026-04-16",
+    "s": "2026-04-10",
+    "p": "below",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "PTAD Ready for Case /\nBusiness Approval Other Project Activities to Begin",
+    "d": "2026-04-16",
+    "s": "2026-04-16",
+    "p": "above",
+    "m": true,
+    "color": "#0089EC"
+  },
+  {
+    "n": "Identify and kick off\nreview",
+    "d": "2026-04-17",
+    "s": "2026-03-13",
+    "p": "below",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "Network Security, FD\nthrough Network Planning",
+    "d": "2026-04-17",
+    "s": "2026-04-15",
+    "p": "above",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "Transport Security",
+    "d": "2026-04-17",
+    "s": "2026-04-15",
+    "p": "below",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "Policy",
+    "d": "2026-04-17",
+    "s": "2026-04-15",
+    "p": "above",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "Security Plan Created",
+    "d": "2026-04-17",
+    "s": "2026-04-17",
+    "p": "below",
+    "m": true,
+    "color": "#888888"
+  },
+  {
+    "n": "Security Requirements\nObtained",
+    "d": "2026-04-20",
+    "s": "2026-04-20",
+    "p": "above",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "PM to insert security\nappropriate requirement tasks here with predecessors",
+    "d": "2026-04-20",
+    "s": "2026-04-20",
+    "p": "below",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "NRR Approved",
+    "d": "2026-04-21",
+    "s": "2026-04-15",
+    "p": "above",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "Security, Clearance\nand Privacy Workstream",
+    "d": "2026-04-21",
+    "s": "2026-03-13",
+    "p": "below",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "Sign off Security\nReview",
+    "d": "2026-04-21",
+    "s": "2026-04-21",
+    "p": "above",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "PM to insert security\nappropriate reviews / signoffs here with predecessors",
+    "d": "2026-04-21",
+    "s": "2026-04-21",
+    "p": "below",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "NI PM Assignment",
+    "d": "2026-04-24",
+    "s": "2026-04-22",
+    "p": "above",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "VBG Activities for\nBusiness Case Approval",
+    "d": "2026-04-30",
+    "s": "2026-04-17",
+    "p": "below",
     "m": false,
     "color": "#0089EC"
   },
   {
     "n": "Business Case Approved",
-    "d": "2025-03-14",
-    "s": "2025-03-14",
-    "p": "below",
+    "d": "2026-04-30",
+    "s": "2026-04-30",
+    "p": "above",
     "m": true,
     "color": "#0089EC"
   },
   {
-    "n": "GTS RTE Assigned",
-    "d": "2025-09-12",
-    "s": "2025-09-08",
+    "n": "In Design (PTAD)",
+    "d": "2026-05-07",
+    "s": "2026-03-26",
+    "p": "below",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "GTS FD Approval",
+    "d": "2026-05-07",
+    "s": "2026-05-01",
     "p": "above",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "GTS RTE Assigned",
+    "d": "2026-05-08",
+    "s": "2026-05-08",
+    "p": "below",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "Network Implementation\nEngagement",
+    "d": "2026-05-08",
+    "s": "2026-04-14",
+    "p": "above",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "Big Team Review prep\n(including and call)",
+    "d": "2026-05-08",
+    "s": "2026-04-27",
+    "p": "below",
     "m": false,
     "color": "#0089EC"
   },
   {
     "n": "GN&T and GTS Dev /\nEngineering Engagement",
-    "d": "2026-02-03",
-    "s": "2025-02-24",
+    "d": "2026-05-11",
+    "s": "2026-04-14",
+    "p": "above",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "GTS Readiness Review",
+    "d": "2026-05-11",
+    "s": "2026-05-08",
     "p": "below",
     "m": false,
     "color": "#0089EC"
+  },
+  {
+    "n": "GTS Readiness Review\nComplete",
+    "d": "2026-05-11",
+    "s": "2026-05-11",
+    "p": "above",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "Buffer Task - Funding\ndelay",
+    "d": "2026-05-11",
+    "s": "2026-05-11",
+    "p": "below",
+    "m": true,
+    "color": "#0089EC"
+  },
+  {
+    "n": "Network Low Level and\nDesign Implementation Planning",
+    "d": "2026-05-27",
+    "s": "2026-05-11",
+    "p": "above",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "FOA Tasks",
+    "d": "2026-05-28",
+    "s": "2026-05-28",
+    "p": "above",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "Network Low Level and\nDesign Implementation Planning Progressed Enough For a Target Date",
+    "d": "2026-05-28",
+    "s": "2026-05-28",
+    "p": "above",
+    "m": true,
+    "color": "#0089EC"
+  },
+  {
+    "n": "FOA Kickoff",
+    "d": "2026-05-28",
+    "s": "2026-05-28",
+    "p": "below",
+    "m": true,
+    "color": "#888888"
   },
   {
     "n": "GTS Low Level Design\nand Grooming",
-    "d": "2026-03-13",
-    "s": "2026-02-02",
+    "d": "2026-06-19",
+    "s": "2026-05-12",
+    "p": "below",
+    "m": false,
+    "color": "#00B845"
+  },
+  {
+    "n": "Network Low Level and\nDesign Implementation Planning Continues",
+    "d": "2026-06-19",
+    "s": "2026-05-29",
     "p": "above",
     "m": false,
     "color": "#00B845"
   },
   {
-    "n": "TPD Low Level Design\nand Grooming",
-    "d": "2026-03-13",
-    "s": "2026-02-02",
+    "n": "GTS Low Level Design\nand Grooming Complete Enough for Development to Begin",
+    "d": "2026-06-19",
+    "s": "2026-06-19",
     "p": "below",
+    "m": true,
+    "color": "#00B845"
+  },
+  {
+    "n": "Low Level Design and\nGrooming",
+    "d": "2026-07-03",
+    "s": "2026-04-17",
+    "p": "above",
     "m": false,
     "color": "#00B845"
+  },
+  {
+    "n": "GTS Low Level Design\nand Grooming Work Continues",
+    "d": "2026-07-03",
+    "s": "2026-06-22",
+    "p": "below",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "Development Activities",
+    "d": "2026-07-16",
+    "s": "2026-06-22",
+    "p": "above",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "Date Commitments by\nImpacted Teams",
+    "d": "2026-07-16",
+    "s": "2026-07-16",
+    "p": "below",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "Development Activities\nProgressed to a Point Where Testing Activities Can Begin",
+    "d": "2026-07-16",
+    "s": "2026-07-16",
+    "p": "above",
+    "m": true,
+    "color": "#888888"
   },
   {
     "n": "Committed Date - GTS\nReceived",
-    "d": "2026-05-15",
-    "s": "2026-05-15",
-    "p": "above",
+    "d": "2026-07-16",
+    "s": "2026-07-16",
+    "p": "below",
     "m": true,
-    "color": "#0089EC"
+    "color": "#888888"
   },
   {
     "n": "Committed Date - TPD\nReceived",
-    "d": "2026-05-15",
-    "s": "2026-05-15",
+    "d": "2026-07-16",
+    "s": "2026-07-16",
+    "p": "above",
+    "m": true,
+    "color": "#888888"
+  },
+  {
+    "n": "Committed Date - NI\nReceived",
+    "d": "2026-07-16",
+    "s": "2026-07-16",
     "p": "below",
     "m": true,
-    "color": "#0089EC"
+    "color": "#888888"
+  },
+  {
+    "n": "Contact Tools Team to\nBaseline Schedule",
+    "d": "2026-07-17",
+    "s": "2026-07-17",
+    "p": "above",
+    "m": true,
+    "color": "#888888"
+  },
+  {
+    "n": "Identify Production\ntesting contacts",
+    "d": "2026-07-23",
+    "s": "2026-07-17",
+    "p": "below",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "System and/or Testing\nIntegration Test Plan Creation and Review",
+    "d": "2026-07-24",
+    "s": "2026-07-17",
+    "p": "above",
+    "m": false,
+    "color": "#888888"
   },
   {
     "n": "Development",
-    "d": "2026-07-17",
-    "s": "2026-03-16",
+    "d": "2026-07-30",
+    "s": "2026-05-28",
+    "p": "below",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "Development Continues",
+    "d": "2026-07-30",
+    "s": "2026-07-17",
     "p": "above",
     "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "Production Testing and\nTest Plan Creation Review",
+    "d": "2026-07-30",
+    "s": "2026-07-24",
+    "p": "below",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "System and/or E2E or\nIntegration, Lower Env Testing",
+    "d": "2026-08-06",
+    "s": "2026-07-17",
+    "p": "above",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "System and/or Testing\nIntegration Execution",
+    "d": "2026-08-06",
+    "s": "2026-07-27",
+    "p": "below",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "System and/or E2E or\nIntegration, Lower Env Testing Signoff",
+    "d": "2026-08-06",
+    "s": "2026-08-06",
+    "p": "above",
+    "m": true,
+    "color": "#888888"
+  },
+  {
+    "n": "Testing",
+    "d": "2026-08-13",
+    "s": "2026-03-16",
+    "p": "below",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "Production Testing",
+    "d": "2026-08-13",
+    "s": "2026-07-17",
+    "p": "above",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "Production Testing\nExecution",
+    "d": "2026-08-13",
+    "s": "2026-07-31",
+    "p": "below",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "Production Testing\nSignoff",
+    "d": "2026-08-13",
+    "s": "2026-08-13",
+    "p": "above",
+    "m": true,
+    "color": "#888888"
+  },
+  {
+    "n": "Technology Operational\nReady",
+    "d": "2026-08-13",
+    "s": "2026-08-13",
+    "p": "below",
+    "m": true,
+    "color": "#888888"
+  },
+  {
+    "n": "Other Project to for\nActivities Prepare PRT",
+    "d": "2026-08-27",
+    "s": "2026-08-14",
+    "p": "above",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "Launch Approved",
+    "d": "2026-08-27",
+    "s": "2026-08-27",
+    "p": "below",
+    "m": true,
+    "color": "#888888"
+  },
+  {
+    "n": "Project End",
+    "d": "2026-08-27",
+    "s": "2026-08-27",
+    "p": "above",
+    "m": true,
+    "color": "#888888"
+  },
+  {
+    "n": "AI Connect: Colocation\nSAP Sites",
+    "d": "2026-09-01",
+    "s": "2026-03-13",
+    "p": "below",
+    "m": false,
     "color": "#00B845"
+  },
+  {
+    "n": "Tech Project Closure",
+    "d": "2026-09-01",
+    "s": "2026-08-13",
+    "p": "above",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "Submit Production\nLaunch Announcement",
+    "d": "2026-09-01",
+    "s": "2026-08-28",
+    "p": "below",
+    "m": false,
+    "color": "#888888"
   }
 ];
 
@@ -122,7 +778,7 @@ const BAR_Y  = 165;
 const BAR_H  = 26;
 const BMID   = BAR_Y + BAR_H / 2;
 
-const T0     = new Date("2025-01-01");
+const T0     = new Date("2026-03-01");
 const T1     = new Date("2026-12-31");
 const TSPAN  = T1 - T0;
 
