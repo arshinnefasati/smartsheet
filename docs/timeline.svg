@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1680" height="540" viewBox="0 0 1680 540">
 <rect width="1680" height="540" fill="#F6F0E2"/>
 <text x="1645.0" y="18.0" text-anchor="end" font-size="9" font-weight="normal" fill="#888888" font-family="Calibri,Arial,sans-serif">Generated 6/19/2026</text>
-<text x="35.0" y="18.0" text-anchor="start" font-size="9" font-weight="normal" fill="#CC0000" font-family="Calibri,Arial,sans-serif">Updated: 6/19/2026 6:36:40 PM</text>
+<text x="35.0" y="18.0" text-anchor="start" font-size="9" font-weight="normal" fill="#CC0000" font-family="Calibri,Arial,sans-serif">Updated: 6/19/2026 6:42:57 PM</text>
 <rect x="35" y="240" width="1610" height="32" fill="#000000" rx="5"/>
 <line x1="35" y1="256.0" x2="615.7" y2="256.0" stroke="#EE001E" stroke-width="7" stroke-linecap="round"/>
 <text x="114.2" y="261.0" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff" font-family="Calibri,Arial,sans-serif">Mar</text>
@@ -23,494 +23,72 @@
 <text x="1404.8" y="261.0" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff" font-family="Calibri,Arial,sans-serif">Nov</text>
 <line x1="1486.6" y1="244" x2="1486.6" y2="268" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
 <text x="1565.8" y="261.0" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff" font-family="Calibri,Arial,sans-serif">Dec</text>
-<line x1="98.3" y1="240" x2="98.3" y2="172" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="98.34426229508198,231 107.34426229508198,240 98.34426229508198,249 89.34426229508198,240" fill="#0089EC"/>
-<text x="98.3" y="167.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Initiate</text>
-<text x="98.3" y="149.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">3/13</text>
-<line x1="98.3" y1="272" x2="98.3" y2="340" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="98.34426229508198,263 107.34426229508198,272 98.34426229508198,281 89.34426229508198,272" fill="#0089EC"/>
-<text x="98.3" y="360.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Project Kickoff</text>
-<text x="98.3" y="377.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">3/13</text>
-<line x1="98.3" y1="240" x2="98.3" y2="125" stroke="#888888" stroke-width="1.3"/>
-<polygon points="98.34426229508198,231 107.34426229508198,240 98.34426229508198,249 89.34426229508198,240" fill="#888888"/>
-<text x="98.3" y="90.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">VBG Product Security</text>
-<text x="98.3" y="105.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">(contact provided</text>
-<text x="98.3" y="120.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">through TPD FD)</text>
-<text x="98.3" y="72.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">3/13</text>
-<line x1="98.3" y1="272" x2="98.3" y2="387" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="98.34426229508198,261 109.34426229508198,272 98.34426229508198,283 87.34426229508198,272" fill="#0089EC"/>
-<text x="98.3" y="407.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Project Start</text>
-<text x="98.3" y="424.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">3/13</text>
-<line x1="114.2" y1="240" x2="114.2" y2="78" stroke="#888888" stroke-width="1.3"/>
-<polygon points="114.18032786885246,231 123.18032786885246,240 114.18032786885246,249 105.18032786885246,240" fill="#888888"/>
-<text x="114.2" y="73.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Ops and Support</text>
-<text x="114.2" y="55.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">3/16</text>
-<line x1="114.2" y1="272" x2="114.2" y2="434" stroke="#888888" stroke-width="1.3"/>
-<polygon points="114.18032786885246,263 123.18032786885246,272 114.18032786885246,281 105.18032786885246,272" fill="#888888"/>
-<text x="114.2" y="454.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">PM to insert</text>
-<text x="114.2" y="469.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">relevant operations</text>
-<text x="114.2" y="484.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">and support items</text>
-<text x="114.2" y="499.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">here with</text>
-<text x="114.2" y="514.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">appropriate</text>
-<text x="114.2" y="529.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">predecessors</text>
-<text x="114.2" y="546.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">3/16</text>
-<line x1="135.3" y1="240" x2="135.3" y2="78" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="135.29508196721312,231 144.29508196721312,240 135.29508196721312,249 126.29508196721312,240" fill="#0089EC"/>
-<text x="135.3" y="73.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Requirements</text>
-<text x="135.3" y="55.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">3/20</text>
-<line x1="135.3" y1="272" x2="135.3" y2="434" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="135.29508196721312,263 144.29508196721312,272 135.29508196721312,281 126.29508196721312,272" fill="#0089EC"/>
-<text x="135.3" y="454.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Product Requirements</text>
-<text x="135.3" y="469.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Review</text>
-<text x="135.3" y="486.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">3/20</text>
-<line x1="161.7" y1="240" x2="161.7" y2="78" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="161.68852459016395,231 170.68852459016395,240 161.68852459016395,249 152.68852459016395,240" fill="#0089EC"/>
-<text x="161.7" y="73.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">GTS Impact Confirmed</text>
-<text x="161.7" y="55.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">3/25</text>
-<line x1="161.7" y1="272" x2="161.7" y2="434" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="161.68852459016395,263 170.68852459016395,272 161.68852459016395,281 152.68852459016395,272" fill="#0089EC"/>
-<text x="161.7" y="454.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">TPD Impact Confirmed</text>
-<text x="161.7" y="471.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">3/25</text>
-<line x1="161.7" y1="240" x2="161.7" y2="78" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="161.68852459016395,231 170.68852459016395,240 161.68852459016395,249 152.68852459016395,240" fill="#0089EC"/>
-<text x="161.7" y="58.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">NP/NS Impact</text>
-<text x="161.7" y="73.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Confirmed</text>
-<text x="161.7" y="40.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">3/25</text>
-<line x1="167.0" y1="272" x2="167.0" y2="340" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="166.9672131147541,263 175.9672131147541,272 166.9672131147541,281 157.9672131147541,272" fill="#0089EC"/>
-<text x="167.0" y="360.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">HLA and T-Shirt</text>
-<text x="167.0" y="375.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Sizes</text>
+<line x1="130.0" y1="240" x2="130.0" y2="172" stroke="#0089EC" stroke-width="1.3"/>
+<polygon points="130.01639344262296,231 139.01639344262296,240 130.01639344262296,249 121.01639344262296,240" fill="#0089EC"/>
+<text x="130.0" y="167.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Project Kickoff</text>
+<text x="130.0" y="149.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">3/19</text>
+<line x1="167.0" y1="272" x2="167.0" y2="340" stroke="#888888" stroke-width="1.3"/>
+<polygon points="166.9672131147541,263 175.9672131147541,272 166.9672131147541,281 157.9672131147541,272" fill="#888888"/>
+<text x="167.0" y="360.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Product Requirements</text>
+<text x="167.0" y="375.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Review</text>
 <text x="167.0" y="392.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">3/26</text>
-<line x1="167.0" y1="240" x2="167.0" y2="172" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="166.9672131147541,231 175.9672131147541,240 166.9672131147541,249 157.9672131147541,240" fill="#0089EC"/>
-<text x="167.0" y="152.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">HLA and T-Shirt Size</text>
-<text x="167.0" y="167.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Complete - GTS</text>
-<text x="167.0" y="134.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">3/26</text>
-<line x1="167.0" y1="272" x2="167.0" y2="387" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="166.9672131147541,263 175.9672131147541,272 166.9672131147541,281 157.9672131147541,272" fill="#0089EC"/>
-<text x="167.0" y="407.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">HLA and T-Shirt Size</text>
-<text x="167.0" y="422.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Complete - TPD</text>
-<text x="167.0" y="439.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">3/26</text>
-<line x1="167.0" y1="240" x2="167.0" y2="125" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="166.9672131147541,231 175.9672131147541,240 166.9672131147541,249 157.9672131147541,240" fill="#0089EC"/>
-<text x="167.0" y="105.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">HLA and T-Shirt Size</text>
-<text x="167.0" y="120.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Complete - NP</text>
-<text x="167.0" y="87.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">3/26</text>
-<line x1="172.2" y1="272" x2="172.2" y2="434" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="172.24590163934425,263 181.24590163934425,272 172.24590163934425,281 163.24590163934425,272" fill="#0089EC"/>
-<text x="172.2" y="454.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Impact Alignment</text>
-<text x="172.2" y="471.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">3/27</text>
-<line x1="172.2" y1="240" x2="172.2" y2="78" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="172.24590163934425,231 181.24590163934425,240 172.24590163934425,249 163.24590163934425,240" fill="#0089EC"/>
-<text x="172.2" y="58.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Security Group</text>
-<text x="172.2" y="73.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Impact Confirmed</text>
-<text x="172.2" y="40.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">3/27</text>
-<line x1="188.1" y1="272" x2="188.1" y2="434" stroke="#888888" stroke-width="1.3"/>
-<polygon points="188.08196721311475,263 197.08196721311475,272 188.08196721311475,281 179.08196721311475,272" fill="#888888"/>
-<text x="188.1" y="454.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Compliance and Risk</text>
-<text x="188.1" y="469.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Management (CRM) -</text>
-<text x="188.1" y="484.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">submitted by Product</text>
-<text x="188.1" y="499.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Owner</text>
-<text x="188.1" y="516.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">3/30</text>
-<line x1="188.1" y1="240" x2="188.1" y2="78" stroke="#888888" stroke-width="1.3"/>
-<polygon points="188.08196721311475,231 197.08196721311475,240 188.08196721311475,249 179.08196721311475,240" fill="#888888"/>
-<text x="188.1" y="43.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">VCG / Consumer</text>
-<text x="188.1" y="58.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Product Security, if</text>
-<text x="188.1" y="73.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">needed</text>
-<text x="188.1" y="25.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">3/30</text>
-<line x1="198.6" y1="272" x2="198.6" y2="434" stroke="#888888" stroke-width="1.3"/>
-<polygon points="198.63934426229508,263 207.63934426229508,272 198.63934426229508,281 189.63934426229508,272" fill="#888888"/>
-<text x="198.6" y="454.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">IT Security (IRM) -</text>
-<text x="198.6" y="469.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">2 weeks SLA for IRM</text>
-<text x="198.6" y="484.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">contact assignment</text>
-<text x="198.6" y="501.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">4/1</text>
-<line x1="198.6" y1="240" x2="198.6" y2="78" stroke="#888888" stroke-width="1.3"/>
-<polygon points="198.63934426229508,231 207.63934426229508,240 198.63934426229508,249 189.63934426229508,240" fill="#888888"/>
-<text x="198.6" y="73.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Cloud Security</text>
-<text x="198.6" y="55.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">4/1</text>
-<line x1="198.6" y1="272" x2="198.6" y2="434" stroke="#888888" stroke-width="1.3"/>
-<polygon points="198.63934426229508,263 207.63934426229508,272 198.63934426229508,281 189.63934426229508,272" fill="#888888"/>
-<text x="198.6" y="454.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Device Technology</text>
-<text x="198.6" y="469.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Security</text>
-<text x="198.6" y="486.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">4/1</text>
-<line x1="198.6" y1="240" x2="198.6" y2="78" stroke="#888888" stroke-width="1.3"/>
-<polygon points="198.63934426229508,231 207.63934426229508,240 198.63934426229508,249 189.63934426229508,240" fill="#888888"/>
-<text x="198.6" y="58.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">AWS Platform</text>
-<text x="198.6" y="73.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Security</text>
-<text x="198.6" y="40.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">4/1</text>
-<line x1="198.6" y1="272" x2="198.6" y2="434" stroke="#888888" stroke-width="1.3"/>
-<polygon points="198.63934426229508,263 207.63934426229508,272 198.63934426229508,281 189.63934426229508,272" fill="#888888"/>
-<text x="198.6" y="454.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Public Sector</text>
-<text x="198.6" y="469.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Security</text>
-<text x="198.6" y="486.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">4/1</text>
-<line x1="240.9" y1="240" x2="240.9" y2="172" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="240.86885245901638,231 249.86885245901638,240 240.86885245901638,249 231.86885245901638,240" fill="#0089EC"/>
-<text x="240.9" y="137.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">PTAD Creation with</text>
-<text x="240.9" y="152.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Cross Functional</text>
-<text x="240.9" y="167.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Input</text>
-<text x="240.9" y="119.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">4/9</text>
-<line x1="240.9" y1="272" x2="240.9" y2="340" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="240.86885245901638,261 251.86885245901638,272 240.86885245901638,283 229.86885245901638,272" fill="#0089EC"/>
-<text x="240.9" y="360.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">PTAD Ready for</text>
-<text x="240.9" y="375.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Network Engagement</text>
-<text x="240.9" y="392.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">4/9</text>
-<line x1="246.1" y1="240" x2="246.1" y2="125" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="246.14754098360658,231 255.14754098360658,240 246.14754098360658,249 237.14754098360658,240" fill="#0089EC"/>
-<text x="246.1" y="90.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Submit and Schedule</text>
-<text x="246.1" y="105.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Network Planning</text>
-<text x="246.1" y="120.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Front Door Review</text>
-<text x="246.1" y="72.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">4/10</text>
-<line x1="262.0" y1="272" x2="262.0" y2="387" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="261.983606557377,263 270.983606557377,272 261.983606557377,281 252.98360655737702,272" fill="#0089EC"/>
-<text x="262.0" y="407.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Assignment of</text>
-<text x="262.0" y="422.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Network Planner</text>
-<text x="262.0" y="439.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">4/13</text>
-<line x1="267.3" y1="240" x2="267.3" y2="78" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="267.26229508196724,231 276.26229508196724,240 267.26229508196724,249 258.26229508196724,240" fill="#0089EC"/>
-<text x="267.3" y="58.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Network Planning</text>
-<text x="267.3" y="73.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Engagement</text>
-<text x="267.3" y="40.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">4/14</text>
-<line x1="267.3" y1="272" x2="267.3" y2="434" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="267.26229508196724,263 276.26229508196724,272 267.26229508196724,281 258.26229508196724,272" fill="#0089EC"/>
-<text x="267.3" y="454.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Network Planning HLD</text>
-<text x="267.3" y="471.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">4/14</text>
-<line x1="267.3" y1="240" x2="267.3" y2="78" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="267.26229508196724,231 276.26229508196724,240 267.26229508196724,249 258.26229508196724,240" fill="#0089EC"/>
-<text x="267.3" y="58.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Network Provisioning</text>
-<text x="267.3" y="73.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Requirements</text>
-<text x="267.3" y="40.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">4/14</text>
-<line x1="267.3" y1="272" x2="267.3" y2="434" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="267.26229508196724,261 278.26229508196724,272 267.26229508196724,283 256.26229508196724,272" fill="#0089EC"/>
-<text x="267.3" y="454.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">NRR Submitted</text>
-<text x="267.3" y="471.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">4/14</text>
-<line x1="277.8" y1="240" x2="277.8" y2="78" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="277.81967213114757,231 286.81967213114757,240 277.81967213114757,249 268.81967213114757,240" fill="#0089EC"/>
-<text x="277.8" y="58.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">PTAD with Cross</text>
-<text x="277.8" y="73.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Functional Review</text>
-<text x="277.8" y="40.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">4/16</text>
-<line x1="277.8" y1="272" x2="277.8" y2="434" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="277.81967213114757,263 286.81967213114757,272 277.81967213114757,281 268.81967213114757,272" fill="#0089EC"/>
-<text x="277.8" y="454.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">PTAD Development</text>
-<text x="277.8" y="469.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Continues</text>
-<text x="277.8" y="486.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">4/16</text>
-<line x1="277.8" y1="240" x2="277.8" y2="78" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="277.81967213114757,229 288.81967213114757,240 277.81967213114757,251 266.81967213114757,240" fill="#0089EC"/>
-<text x="277.8" y="13.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">PTAD Ready for</text>
-<text x="277.8" y="28.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Business Case</text>
-<text x="277.8" y="43.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Approval / Other</text>
-<text x="277.8" y="58.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Project Activities</text>
-<text x="277.8" y="73.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">to Begin</text>
-<text x="277.8" y="-5.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">4/16</text>
-<line x1="283.1" y1="272" x2="283.1" y2="434" stroke="#888888" stroke-width="1.3"/>
-<polygon points="283.0983606557377,263 292.0983606557377,272 283.0983606557377,281 274.0983606557377,272" fill="#888888"/>
-<text x="283.1" y="454.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Identify and kick</text>
-<text x="283.1" y="469.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">off review</text>
-<text x="283.1" y="486.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">4/17</text>
-<line x1="283.1" y1="240" x2="283.1" y2="78" stroke="#888888" stroke-width="1.3"/>
-<polygon points="283.0983606557377,231 292.0983606557377,240 283.0983606557377,249 274.0983606557377,240" fill="#888888"/>
-<text x="283.1" y="43.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Network Security,</text>
-<text x="283.1" y="58.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">through Network</text>
-<text x="283.1" y="73.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Planning FD</text>
-<text x="283.1" y="25.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">4/17</text>
-<line x1="283.1" y1="272" x2="283.1" y2="434" stroke="#888888" stroke-width="1.3"/>
-<polygon points="283.0983606557377,263 292.0983606557377,272 283.0983606557377,281 274.0983606557377,272" fill="#888888"/>
-<text x="283.1" y="454.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Transport Security</text>
-<text x="283.1" y="471.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">4/17</text>
-<line x1="283.1" y1="240" x2="283.1" y2="78" stroke="#888888" stroke-width="1.3"/>
-<polygon points="283.0983606557377,231 292.0983606557377,240 283.0983606557377,249 274.0983606557377,240" fill="#888888"/>
-<text x="283.1" y="73.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Policy</text>
-<text x="283.1" y="55.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">4/17</text>
-<line x1="283.1" y1="272" x2="283.1" y2="434" stroke="#888888" stroke-width="1.3"/>
-<polygon points="283.0983606557377,261 294.0983606557377,272 283.0983606557377,283 272.0983606557377,272" fill="#888888"/>
-<text x="283.1" y="454.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Security Plan</text>
-<text x="283.1" y="469.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Created</text>
-<text x="283.1" y="486.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">4/17</text>
-<line x1="298.9" y1="240" x2="298.9" y2="78" stroke="#888888" stroke-width="1.3"/>
-<polygon points="298.9344262295082,231 307.9344262295082,240 298.9344262295082,249 289.9344262295082,240" fill="#888888"/>
-<text x="298.9" y="43.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Security</text>
-<text x="298.9" y="58.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Requirements</text>
-<text x="298.9" y="73.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Obtained</text>
-<text x="298.9" y="25.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">4/20</text>
-<line x1="298.9" y1="272" x2="298.9" y2="434" stroke="#888888" stroke-width="1.3"/>
-<polygon points="298.9344262295082,263 307.9344262295082,272 298.9344262295082,281 289.9344262295082,272" fill="#888888"/>
-<text x="298.9" y="454.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">PM to insert</text>
-<text x="298.9" y="469.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">appropriate security</text>
-<text x="298.9" y="484.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">requirement tasks</text>
-<text x="298.9" y="499.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">here with</text>
-<text x="298.9" y="514.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">predecessors</text>
-<text x="298.9" y="531.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">4/20</text>
-<line x1="304.2" y1="240" x2="304.2" y2="78" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="304.21311475409834,231 313.21311475409834,240 304.21311475409834,249 295.21311475409834,240" fill="#0089EC"/>
-<text x="304.2" y="73.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">NRR Approved</text>
-<text x="304.2" y="55.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">4/21</text>
-<line x1="304.2" y1="272" x2="304.2" y2="434" stroke="#888888" stroke-width="1.3"/>
-<polygon points="304.21311475409834,263 313.21311475409834,272 304.21311475409834,281 295.21311475409834,272" fill="#888888"/>
-<text x="304.2" y="454.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Security, Clearance</text>
-<text x="304.2" y="469.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">and Privacy</text>
-<text x="304.2" y="484.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Workstream</text>
-<text x="304.2" y="501.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">4/21</text>
-<line x1="304.2" y1="240" x2="304.2" y2="78" stroke="#888888" stroke-width="1.3"/>
-<polygon points="304.21311475409834,231 313.21311475409834,240 304.21311475409834,249 295.21311475409834,240" fill="#888888"/>
-<text x="304.2" y="58.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Sign off Security</text>
-<text x="304.2" y="73.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Review</text>
-<text x="304.2" y="40.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">4/21</text>
-<line x1="304.2" y1="272" x2="304.2" y2="434" stroke="#888888" stroke-width="1.3"/>
-<polygon points="304.21311475409834,263 313.21311475409834,272 304.21311475409834,281 295.21311475409834,272" fill="#888888"/>
-<text x="304.2" y="454.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">PM to insert</text>
-<text x="304.2" y="469.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">appropriate security</text>
-<text x="304.2" y="484.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">reviews / signoffs</text>
-<text x="304.2" y="499.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">here with</text>
-<text x="304.2" y="514.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">predecessors</text>
-<text x="304.2" y="531.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">4/21</text>
-<line x1="320.0" y1="240" x2="320.0" y2="172" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="320.04918032786884,231 329.04918032786884,240 320.04918032786884,249 311.04918032786884,240" fill="#0089EC"/>
-<text x="320.0" y="167.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">NI PM Assignment</text>
-<text x="320.0" y="149.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">4/24</text>
-<line x1="351.7" y1="272" x2="351.7" y2="340" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="351.72131147540983,263 360.72131147540983,272 351.72131147540983,281 342.72131147540983,272" fill="#0089EC"/>
-<text x="351.7" y="360.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">VBG Activities for</text>
-<text x="351.7" y="375.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Business Case</text>
-<text x="351.7" y="390.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Approval</text>
-<text x="351.7" y="407.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">4/30</text>
-<line x1="351.7" y1="240" x2="351.7" y2="125" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="351.72131147540983,229 362.72131147540983,240 351.72131147540983,251 340.72131147540983,240" fill="#0089EC"/>
-<text x="351.7" y="105.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Business Case</text>
-<text x="351.7" y="120.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Approved</text>
-<text x="351.7" y="87.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">4/30</text>
-<line x1="388.7" y1="272" x2="388.7" y2="387" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="388.67213114754094,263 397.67213114754094,272 388.67213114754094,281 379.67213114754094,272" fill="#0089EC"/>
-<text x="388.7" y="407.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">In Design (PTAD)</text>
-<text x="388.7" y="424.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">5/7</text>
-<line x1="388.7" y1="240" x2="388.7" y2="172" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="388.67213114754094,231 397.67213114754094,240 388.67213114754094,249 379.67213114754094,240" fill="#0089EC"/>
-<text x="388.7" y="167.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">GTS FD Approval</text>
-<text x="388.7" y="149.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">5/7</text>
-<line x1="394.0" y1="272" x2="394.0" y2="434" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="393.95081967213116,263 402.95081967213116,272 393.95081967213116,281 384.95081967213116,272" fill="#0089EC"/>
-<text x="394.0" y="454.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">GTS RTE Assigned</text>
-<text x="394.0" y="471.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">5/8</text>
-<line x1="394.0" y1="240" x2="394.0" y2="78" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="393.95081967213116,231 402.95081967213116,240 393.95081967213116,249 384.95081967213116,240" fill="#0089EC"/>
-<text x="394.0" y="43.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Network</text>
-<text x="394.0" y="58.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Implementation</text>
-<text x="394.0" y="73.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Engagement</text>
-<text x="394.0" y="25.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">5/8</text>
-<line x1="394.0" y1="272" x2="394.0" y2="434" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="393.95081967213116,263 402.95081967213116,272 393.95081967213116,281 384.95081967213116,272" fill="#0089EC"/>
-<text x="394.0" y="454.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Big Team Review</text>
-<text x="394.0" y="469.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">(including prep and</text>
-<text x="394.0" y="484.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">call)</text>
-<text x="394.0" y="501.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">5/8</text>
-<line x1="409.8" y1="240" x2="409.8" y2="78" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="409.7868852459016,231 418.7868852459016,240 409.7868852459016,249 400.7868852459016,240" fill="#0089EC"/>
-<text x="409.8" y="43.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">GN&amp;T and GTS Dev /</text>
-<text x="409.8" y="58.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Engineering</text>
-<text x="409.8" y="73.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Engagement</text>
-<text x="409.8" y="25.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">5/11</text>
-<line x1="409.8" y1="272" x2="409.8" y2="434" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="409.7868852459016,263 418.7868852459016,272 409.7868852459016,281 400.7868852459016,272" fill="#0089EC"/>
-<text x="409.8" y="454.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">GTS Readiness Review</text>
-<text x="409.8" y="471.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">5/11</text>
-<line x1="409.8" y1="240" x2="409.8" y2="78" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="409.7868852459016,231 418.7868852459016,240 409.7868852459016,249 400.7868852459016,240" fill="#0089EC"/>
-<text x="409.8" y="58.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">GTS Readiness Review</text>
-<text x="409.8" y="73.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Complete</text>
-<text x="409.8" y="40.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">5/11</text>
-<line x1="409.8" y1="272" x2="409.8" y2="434" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="409.7868852459016,261 420.7868852459016,272 409.7868852459016,283 398.7868852459016,272" fill="#0089EC"/>
-<text x="409.8" y="454.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Buffer Task -</text>
-<text x="409.8" y="469.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Funding delay</text>
-<text x="409.8" y="486.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">5/11</text>
-<line x1="494.2" y1="240" x2="494.2" y2="172" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="494.24590163934425,231 503.24590163934425,240 494.24590163934425,249 485.24590163934425,240" fill="#0089EC"/>
-<text x="494.2" y="122.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Network Low Level</text>
-<text x="494.2" y="137.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Design and</text>
-<text x="494.2" y="152.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Implementation</text>
-<text x="494.2" y="167.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Planning</text>
-<text x="494.2" y="104.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">5/27</text>
-<line x1="499.5" y1="272" x2="499.5" y2="340" stroke="#888888" stroke-width="1.3"/>
-<polygon points="499.5245901639345,263 508.5245901639345,272 499.5245901639345,281 490.5245901639345,272" fill="#888888"/>
-<text x="499.5" y="360.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">FOA Tasks</text>
-<text x="499.5" y="377.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">5/28</text>
-<line x1="499.5" y1="240" x2="499.5" y2="125" stroke="#0089EC" stroke-width="1.3"/>
-<polygon points="499.5245901639345,229 510.5245901639345,240 499.5245901639345,251 488.5245901639345,240" fill="#0089EC"/>
-<text x="499.5" y="45.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Network Low Level</text>
-<text x="499.5" y="60.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Design and</text>
-<text x="499.5" y="75.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Implementation</text>
-<text x="499.5" y="90.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Planning Progressed</text>
-<text x="499.5" y="105.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Enough For a Target</text>
-<text x="499.5" y="120.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Date</text>
-<text x="499.5" y="27.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">5/28</text>
-<line x1="499.5" y1="272" x2="499.5" y2="387" stroke="#888888" stroke-width="1.3"/>
-<polygon points="499.5245901639345,261 510.5245901639345,272 499.5245901639345,283 488.5245901639345,272" fill="#888888"/>
-<text x="499.5" y="407.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">FOA Kickoff</text>
-<text x="499.5" y="424.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">5/28</text>
-<line x1="615.7" y1="240" x2="615.7" y2="172" stroke="#00B845" stroke-width="1.3"/>
-<polygon points="615.655737704918,231 624.655737704918,240 615.655737704918,249 606.655737704918,240" fill="#00B845"/>
-<text x="615.7" y="152.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">GTS Low Level Design</text>
-<text x="615.7" y="167.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">and Grooming</text>
-<text x="615.7" y="134.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">6/19</text>
-<line x1="615.7" y1="272" x2="615.7" y2="340" stroke="#00B845" stroke-width="1.3"/>
-<polygon points="615.655737704918,263 624.655737704918,272 615.655737704918,281 606.655737704918,272" fill="#00B845"/>
-<text x="615.7" y="360.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Network Low Level</text>
-<text x="615.7" y="375.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Design and</text>
-<text x="615.7" y="390.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Implementation</text>
-<text x="615.7" y="405.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Planning Continues</text>
-<text x="615.7" y="422.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">6/19</text>
-<line x1="615.7" y1="240" x2="615.7" y2="125" stroke="#00B845" stroke-width="1.3"/>
-<polygon points="615.655737704918,229 626.655737704918,240 615.655737704918,251 604.655737704918,240" fill="#00B845"/>
-<text x="615.7" y="75.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">GTS Low Level Design</text>
-<text x="615.7" y="90.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">and Grooming</text>
-<text x="615.7" y="105.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Complete Enough for</text>
-<text x="615.7" y="120.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Development to Begin</text>
-<text x="615.7" y="57.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">6/19</text>
-<line x1="689.6" y1="272" x2="689.6" y2="340" stroke="#00B845" stroke-width="1.3"/>
-<polygon points="689.5573770491803,263 698.5573770491803,272 689.5573770491803,281 680.5573770491803,272" fill="#00B845"/>
-<text x="689.6" y="360.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Low Level Design and</text>
-<text x="689.6" y="375.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Grooming</text>
-<text x="689.6" y="392.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">7/3</text>
-<line x1="689.6" y1="240" x2="689.6" y2="172" stroke="#888888" stroke-width="1.3"/>
-<polygon points="689.5573770491803,231 698.5573770491803,240 689.5573770491803,249 680.5573770491803,240" fill="#888888"/>
-<text x="689.6" y="137.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">GTS Low Level Design</text>
-<text x="689.6" y="152.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">and Grooming Work</text>
-<text x="689.6" y="167.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Continues</text>
-<text x="689.6" y="119.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">7/3</text>
-<line x1="758.2" y1="272" x2="758.2" y2="340" stroke="#888888" stroke-width="1.3"/>
-<polygon points="758.1803278688525,263 767.1803278688525,272 758.1803278688525,281 749.1803278688525,272" fill="#888888"/>
-<text x="758.2" y="360.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Development</text>
-<text x="758.2" y="375.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Activities</text>
-<text x="758.2" y="392.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">7/16</text>
-<line x1="758.2" y1="240" x2="758.2" y2="172" stroke="#888888" stroke-width="1.3"/>
-<polygon points="758.1803278688525,231 767.1803278688525,240 758.1803278688525,249 749.1803278688525,240" fill="#888888"/>
-<text x="758.2" y="152.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Date Commitments by</text>
-<text x="758.2" y="167.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Impacted Teams</text>
-<text x="758.2" y="134.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">7/16</text>
-<line x1="758.2" y1="272" x2="758.2" y2="387" stroke="#888888" stroke-width="1.3"/>
-<polygon points="758.1803278688525,261 769.1803278688525,272 758.1803278688525,283 747.1803278688525,272" fill="#888888"/>
-<text x="758.2" y="407.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Development</text>
-<text x="758.2" y="422.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Activities</text>
-<text x="758.2" y="437.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Progressed to a</text>
-<text x="758.2" y="452.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Point Where Testing</text>
-<text x="758.2" y="467.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Activities Can Begin</text>
-<text x="758.2" y="484.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">7/16</text>
-<line x1="758.2" y1="240" x2="758.2" y2="125" stroke="#888888" stroke-width="1.3"/>
-<polygon points="758.1803278688525,229 769.1803278688525,240 758.1803278688525,251 747.1803278688525,240" fill="#888888"/>
-<text x="758.2" y="105.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Committed Date</text>
-<text x="758.2" y="120.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Received - GTS</text>
-<text x="758.2" y="87.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">7/16</text>
-<line x1="758.2" y1="272" x2="758.2" y2="434" stroke="#888888" stroke-width="1.3"/>
-<polygon points="758.1803278688525,261 769.1803278688525,272 758.1803278688525,283 747.1803278688525,272" fill="#888888"/>
-<text x="758.2" y="454.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Committed Date</text>
-<text x="758.2" y="469.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Received - TPD</text>
-<text x="758.2" y="486.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">7/16</text>
-<line x1="758.2" y1="240" x2="758.2" y2="78" stroke="#888888" stroke-width="1.3"/>
-<polygon points="758.1803278688525,229 769.1803278688525,240 758.1803278688525,251 747.1803278688525,240" fill="#888888"/>
-<text x="758.2" y="58.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Committed Date</text>
-<text x="758.2" y="73.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Received - NI</text>
-<text x="758.2" y="40.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">7/16</text>
-<line x1="763.5" y1="272" x2="763.5" y2="434" stroke="#888888" stroke-width="1.3"/>
-<polygon points="763.4590163934425,261 774.4590163934425,272 763.4590163934425,283 752.4590163934425,272" fill="#888888"/>
-<text x="763.5" y="454.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Contact Tools Team</text>
-<text x="763.5" y="469.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">to Baseline Schedule</text>
-<text x="763.5" y="486.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">7/17</text>
-<line x1="795.1" y1="240" x2="795.1" y2="78" stroke="#888888" stroke-width="1.3"/>
-<polygon points="795.1311475409836,231 804.1311475409836,240 795.1311475409836,249 786.1311475409836,240" fill="#888888"/>
-<text x="795.1" y="58.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Identify Production</text>
-<text x="795.1" y="73.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">testing contacts</text>
-<text x="795.1" y="40.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">7/23</text>
-<line x1="800.4" y1="272" x2="800.4" y2="434" stroke="#888888" stroke-width="1.3"/>
-<polygon points="800.4098360655737,263 809.4098360655737,272 800.4098360655737,281 791.4098360655737,272" fill="#888888"/>
-<text x="800.4" y="454.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">System and/or</text>
-<text x="800.4" y="469.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Integration Testing</text>
-<text x="800.4" y="484.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Test Plan Creation</text>
-<text x="800.4" y="499.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">and Review</text>
-<text x="800.4" y="516.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">7/24</text>
-<line x1="832.1" y1="240" x2="832.1" y2="172" stroke="#888888" stroke-width="1.3"/>
-<polygon points="832.0819672131148,231 841.0819672131148,240 832.0819672131148,249 823.0819672131148,240" fill="#888888"/>
-<text x="832.1" y="167.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Development</text>
-<text x="832.1" y="149.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">7/30</text>
-<line x1="832.1" y1="272" x2="832.1" y2="340" stroke="#888888" stroke-width="1.3"/>
-<polygon points="832.0819672131148,263 841.0819672131148,272 832.0819672131148,281 823.0819672131148,272" fill="#888888"/>
-<text x="832.1" y="360.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Development</text>
-<text x="832.1" y="375.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Continues</text>
-<text x="832.1" y="392.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">7/30</text>
-<line x1="832.1" y1="240" x2="832.1" y2="125" stroke="#888888" stroke-width="1.3"/>
-<polygon points="832.0819672131148,231 841.0819672131148,240 832.0819672131148,249 823.0819672131148,240" fill="#888888"/>
-<text x="832.1" y="90.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Production Testing</text>
-<text x="832.1" y="105.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Test Plan Creation</text>
-<text x="832.1" y="120.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">and Review</text>
-<text x="832.1" y="72.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">7/30</text>
-<line x1="869.0" y1="272" x2="869.0" y2="387" stroke="#888888" stroke-width="1.3"/>
-<polygon points="869.0327868852459,263 878.0327868852459,272 869.0327868852459,281 860.0327868852459,272" fill="#888888"/>
-<text x="869.0" y="407.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">System and/or</text>
-<text x="869.0" y="422.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Integration, E2E or</text>
-<text x="869.0" y="437.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Lower Env Testing</text>
-<text x="869.0" y="454.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">8/6</text>
-<line x1="869.0" y1="240" x2="869.0" y2="78" stroke="#888888" stroke-width="1.3"/>
-<polygon points="869.0327868852459,231 878.0327868852459,240 869.0327868852459,249 860.0327868852459,240" fill="#888888"/>
-<text x="869.0" y="43.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">System and/or</text>
-<text x="869.0" y="58.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Integration Testing</text>
-<text x="869.0" y="73.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Execution</text>
-<text x="869.0" y="25.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">8/6</text>
-<line x1="869.0" y1="272" x2="869.0" y2="434" stroke="#888888" stroke-width="1.3"/>
-<polygon points="869.0327868852459,261 880.0327868852459,272 869.0327868852459,283 858.0327868852459,272" fill="#888888"/>
-<text x="869.0" y="454.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">System and/or</text>
-<text x="869.0" y="469.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Integration, E2E or</text>
-<text x="869.0" y="484.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Lower Env  Testing</text>
-<text x="869.0" y="499.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Signoff</text>
-<text x="869.0" y="516.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">8/6</text>
-<line x1="906.0" y1="240" x2="906.0" y2="172" stroke="#888888" stroke-width="1.3"/>
-<polygon points="905.9836065573771,231 914.9836065573771,240 905.9836065573771,249 896.9836065573771,240" fill="#888888"/>
-<text x="906.0" y="167.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Testing</text>
-<text x="906.0" y="149.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">8/13</text>
-<line x1="906.0" y1="272" x2="906.0" y2="340" stroke="#888888" stroke-width="1.3"/>
-<polygon points="905.9836065573771,263 914.9836065573771,272 905.9836065573771,281 896.9836065573771,272" fill="#888888"/>
-<text x="906.0" y="360.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Production Testing</text>
-<text x="906.0" y="377.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">8/13</text>
-<line x1="906.0" y1="240" x2="906.0" y2="125" stroke="#888888" stroke-width="1.3"/>
-<polygon points="905.9836065573771,231 914.9836065573771,240 905.9836065573771,249 896.9836065573771,240" fill="#888888"/>
-<text x="906.0" y="105.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Production Testing</text>
-<text x="906.0" y="120.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Execution</text>
-<text x="906.0" y="87.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">8/13</text>
-<line x1="906.0" y1="272" x2="906.0" y2="434" stroke="#888888" stroke-width="1.3"/>
-<polygon points="905.9836065573771,261 916.9836065573771,272 905.9836065573771,283 894.9836065573771,272" fill="#888888"/>
-<text x="906.0" y="454.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Production Testing</text>
-<text x="906.0" y="469.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Signoff</text>
-<text x="906.0" y="486.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">8/13</text>
-<line x1="906.0" y1="240" x2="906.0" y2="78" stroke="#888888" stroke-width="1.3"/>
-<polygon points="905.9836065573771,229 916.9836065573771,240 905.9836065573771,251 894.9836065573771,240" fill="#888888"/>
-<text x="906.0" y="58.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Technology</text>
-<text x="906.0" y="73.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Operational Ready</text>
-<text x="906.0" y="40.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">8/13</text>
-<line x1="979.9" y1="272" x2="979.9" y2="340" stroke="#888888" stroke-width="1.3"/>
-<polygon points="979.8852459016393,263 988.8852459016393,272 979.8852459016393,281 970.8852459016393,272" fill="#888888"/>
-<text x="979.9" y="360.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Other Project</text>
-<text x="979.9" y="375.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Activities to</text>
-<text x="979.9" y="390.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Prepare for PRT</text>
-<text x="979.9" y="407.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">8/27</text>
-<line x1="979.9" y1="240" x2="979.9" y2="172" stroke="#888888" stroke-width="1.3"/>
-<polygon points="979.8852459016393,229 990.8852459016393,240 979.8852459016393,251 968.8852459016393,240" fill="#888888"/>
-<text x="979.9" y="167.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Launch Approved</text>
-<text x="979.9" y="149.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">8/27</text>
-<line x1="979.9" y1="272" x2="979.9" y2="387" stroke="#888888" stroke-width="1.3"/>
-<polygon points="979.8852459016393,261 990.8852459016393,272 979.8852459016393,283 968.8852459016393,272" fill="#888888"/>
-<text x="979.9" y="407.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Project End</text>
-<text x="979.9" y="424.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">8/27</text>
-<line x1="1006.3" y1="240" x2="1006.3" y2="125" stroke="#00B845" stroke-width="1.3"/>
-<polygon points="1006.2786885245903,231 1015.2786885245903,240 1006.2786885245903,249 997.2786885245903,240" fill="#00B845"/>
-<text x="1006.3" y="90.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">AI Connect:</text>
-<text x="1006.3" y="105.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Colocation  SAP</text>
-<text x="1006.3" y="120.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Sites</text>
-<text x="1006.3" y="72.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">9/1</text>
-<line x1="1006.3" y1="272" x2="1006.3" y2="434" stroke="#888888" stroke-width="1.3"/>
-<polygon points="1006.2786885245903,263 1015.2786885245903,272 1006.2786885245903,281 997.2786885245903,272" fill="#888888"/>
-<text x="1006.3" y="454.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Tech Project Closure</text>
-<text x="1006.3" y="471.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">9/1</text>
-<line x1="1006.3" y1="240" x2="1006.3" y2="78" stroke="#888888" stroke-width="1.3"/>
-<polygon points="1006.2786885245903,231 1015.2786885245903,240 1006.2786885245903,249 997.2786885245903,240" fill="#888888"/>
-<text x="1006.3" y="58.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Submit Production</text>
-<text x="1006.3" y="73.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Launch Announcement</text>
-<text x="1006.3" y="40.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">9/1</text>
+<line x1="378.1" y1="240" x2="378.1" y2="172" stroke="#888888" stroke-width="1.3"/>
+<polygon points="378.1147540983606,231 387.1147540983606,240 378.1147540983606,249 369.1147540983606,240" fill="#888888"/>
+<text x="378.1" y="137.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Submit and Schedule</text>
+<text x="378.1" y="152.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Network Planning</text>
+<text x="378.1" y="167.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Front Door Review</text>
+<text x="378.1" y="119.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">5/5</text>
+<line x1="452.0" y1="272" x2="452.0" y2="340" stroke="#888888" stroke-width="1.3"/>
+<polygon points="452.0163934426229,261 463.0163934426229,272 452.0163934426229,283 441.0163934426229,272" fill="#888888"/>
+<text x="452.0" y="360.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Business Case</text>
+<text x="452.0" y="375.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Approved</text>
+<text x="452.0" y="392.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">5/19</text>
+<line x1="489.0" y1="240" x2="489.0" y2="172" stroke="#888888" stroke-width="1.3"/>
+<polygon points="488.9672131147541,231 497.9672131147541,240 488.9672131147541,249 479.9672131147541,240" fill="#888888"/>
+<text x="489.0" y="167.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">GTS FD Approval</text>
+<text x="489.0" y="149.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">5/26</text>
+<line x1="557.6" y1="272" x2="557.6" y2="340" stroke="#888888" stroke-width="1.3"/>
+<polygon points="557.5901639344263,263 566.5901639344263,272 557.5901639344263,281 548.5901639344263,272" fill="#888888"/>
+<text x="557.6" y="360.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Big Team Review</text>
+<text x="557.6" y="375.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">(including prep and</text>
+<text x="557.6" y="390.0" text-anchor="middle" font-size="12.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">call)</text>
+<text x="557.6" y="407.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">6/8</text>
+<line x1="1117.1" y1="240" x2="1117.1" y2="172" stroke="#888888" stroke-width="1.3"/>
+<polygon points="1117.1311475409836,229 1128.1311475409836,240 1117.1311475409836,251 1106.1311475409836,240" fill="#888888"/>
+<text x="1117.1" y="152.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Committed Date</text>
+<text x="1117.1" y="167.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Received - GTS</text>
+<text x="1117.1" y="134.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">9/22</text>
+<line x1="1117.1" y1="272" x2="1117.1" y2="340" stroke="#888888" stroke-width="1.3"/>
+<polygon points="1117.1311475409836,261 1128.1311475409836,272 1117.1311475409836,283 1106.1311475409836,272" fill="#888888"/>
+<text x="1117.1" y="360.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Committed Date</text>
+<text x="1117.1" y="375.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Received - TPD</text>
+<text x="1117.1" y="392.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">9/22</text>
+<line x1="1117.1" y1="240" x2="1117.1" y2="125" stroke="#888888" stroke-width="1.3"/>
+<polygon points="1117.1311475409836,229 1128.1311475409836,240 1117.1311475409836,251 1106.1311475409836,240" fill="#888888"/>
+<text x="1117.1" y="105.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Committed Date</text>
+<text x="1117.1" y="120.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Received - NI</text>
+<text x="1117.1" y="87.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">9/22</text>
+<line x1="1338.8" y1="272" x2="1338.8" y2="340" stroke="#888888" stroke-width="1.3"/>
+<polygon points="1338.8360655737706,261 1349.8360655737706,272 1338.8360655737706,283 1327.8360655737706,272" fill="#888888"/>
+<text x="1338.8" y="360.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Production Testing</text>
+<text x="1338.8" y="375.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Signoff</text>
+<text x="1338.8" y="392.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">11/3</text>
+<line x1="1523.6" y1="240" x2="1523.6" y2="172" stroke="#888888" stroke-width="1.3"/>
+<polygon points="1523.5901639344263,229 1534.5901639344263,240 1523.5901639344263,251 1512.5901639344263,240" fill="#888888"/>
+<text x="1523.6" y="122.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">System and/or</text>
+<text x="1523.6" y="137.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Integration, E2E or</text>
+<text x="1523.6" y="152.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Lower Env  Testing</text>
+<text x="1523.6" y="167.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Signoff</text>
+<text x="1523.6" y="104.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">12/8</text>
+<line x1="1523.6" y1="272" x2="1523.6" y2="340" stroke="#888888" stroke-width="1.3"/>
+<polygon points="1523.5901639344263,261 1534.5901639344263,272 1523.5901639344263,283 1512.5901639344263,272" fill="#888888"/>
+<text x="1523.6" y="360.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Technology</text>
+<text x="1523.6" y="375.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Operational Ready</text>
+<text x="1523.6" y="392.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">12/8</text>
+<line x1="1597.5" y1="240" x2="1597.5" y2="172" stroke="#888888" stroke-width="1.3"/>
+<polygon points="1597.4918032786886,229 1608.4918032786886,240 1597.4918032786886,251 1586.4918032786886,240" fill="#888888"/>
+<text x="1597.5" y="167.0" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Project End</text>
+<text x="1597.5" y="149.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">12/22</text>
 <polygon points="196.0,514.0 202.0,520.0 196.0,526.0 190.0,520.0" fill="#0089EC"/>
 <text x="208.0" y="524.5" text-anchor="start" font-size="9.5" font-weight="normal" fill="#1a1a1a" font-family="Calibri,Arial,sans-serif">Complete</text>
 <polygon points="518.0,514.0 524.0,520.0 518.0,526.0 512.0,520.0" fill="#00B845"/>
