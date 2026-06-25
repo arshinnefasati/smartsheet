@@ -103,7 +103,7 @@
 <rect x="441.0" y="12" width="183" height="22" rx="11" fill="#888888"/>
 <polygon points="453.0,19.0 457.0,23.0 453.0,27.0 449.0,23.0" fill="#ffffff"/>
 <text x="463.0" y="27.0" text-anchor="start" font-size="9.5" font-weight="normal" fill="#ffffff" font-family="Calibri,Arial,sans-serif">Not Started / On Hold</text>
-<rect x="634.0" y="12" width="155" height="22" rx="11" fill="#EE001E"/>
+<rect x="634.0" y="12" width="155" height="22" rx="11" fill="#59D186"/>
 <rect x="642.0" y="21.5" width="8" height="3" rx="1.5" fill="#ffffff"/>
 <text x="656.0" y="27.0" text-anchor="start" font-size="9.5" font-weight="normal" fill="#ffffff" font-family="Calibri,Arial,sans-serif">Progress to Today</text>
 </svg>
