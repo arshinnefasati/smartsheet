@@ -17,7 +17,7 @@
 </head>
 <body>
 
-<p class="datestamp">Generated 6/22/2026</p>
+<p class="datestamp">Generated 6/25/2026</p>
 <div id="chart"></div>
 
 <script>
@@ -142,7 +142,7 @@ const T0     = new Date("2026-03-01");
 const T1     = new Date("2026-12-31");
 const TSPAN  = T1 - T0;
 
-const TODAY  = new Date("2026-06-22");
+const TODAY  = new Date("2026-06-25");
 
 const LVL    = [60, 100, 140];
 const LH     = 14;
@@ -153,7 +153,8 @@ const NAVY   = "#000000";
 const BLUE   = "#0089EC";
 const GREEN  = "#00B845";
 const AMBER  = "#FFCD27";
-const RED    = "#EE001E";
+const RED       = "#EE001E";
+const TODAY_LINE= "#59D186";
 const GRAY   = "#888888";
 const DARK   = "#1a1a1a";
 
@@ -199,7 +200,7 @@ o(`<rect width="${W}" height="${H}" fill="#F6F0E2"/>`);
 o(`<rect x="${ML}" y="${BAR_Y}" width="${TLW}" height="${BAR_H}" fill="${NAVY}" rx="4"/>`);
 
 const todayX = Math.min(dateX(TODAY.toISOString().slice(0,10)), ML + TLW);
-o(`<line x1="${ML}" y1="${BMID}" x2="${todayX}" y2="${BMID}" stroke="${RED}" stroke-width="5" stroke-linecap="round"/>`);
+o(`<line x1="${ML}" y1="${BMID}" x2="${todayX}" y2="${BMID}" stroke="${TODAY_LINE}" stroke-width="5" stroke-linecap="round"/>`);
 
 const MN = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 const startM = T0.getMonth() + 1;
@@ -270,13 +271,13 @@ LEG_ITEMS.forEach(([c, lbl], i) => {
 });
 
 // Date stamp
-o(`<text x="${W - MR}" y="14" text-anchor="end" font-size="9" fill="#888888" font-family="Calibri,Arial,sans-serif">Generated 2026-06-22</text>`);
+o(`<text x="${W - MR}" y="14" text-anchor="end" font-size="9" fill="#888888" font-family="Calibri,Arial,sans-serif">Generated 2026-06-25</text>`);
 
 o(`</svg>`);
 document.getElementById("chart").innerHTML = E.join("");
 </script>
 
-<p style="margin-top:8px; font-size:9px; color:#888;">Red line = progress to today &nbsp;|&nbsp; Source: Smartsheet</p>
+<p style="margin-top:8px; font-size:9px; color:#888;">Green line = progress to today &nbsp;|&nbsp; Source: Smartsheet</p>
 
 </body>
 </html>
