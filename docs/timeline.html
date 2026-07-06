@@ -17,7 +17,7 @@
 </head>
 <body>
 
-<p class="datestamp">Generated 6/25/2026</p>
+<p class="datestamp">Generated 7/6/2026</p>
 <div id="chart"></div>
 
 <script>
@@ -142,7 +142,7 @@ const T0     = new Date("2026-03-01");
 const T1     = new Date("2026-12-31");
 const TSPAN  = T1 - T0;
 
-const TODAY  = new Date("2026-06-25");
+const TODAY  = new Date("2026-07-06");
 
 const LVL    = [60, 100, 140];
 const LH     = 14;
@@ -271,7 +271,7 @@ LEG_ITEMS.forEach(([c, lbl], i) => {
 });
 
 // Date stamp
-o(`<text x="${W - MR}" y="14" text-anchor="end" font-size="9" fill="#888888" font-family="Calibri,Arial,sans-serif">Generated 2026-06-25</text>`);
+o(`<text x="${W - MR}" y="14" text-anchor="end" font-size="9" fill="#888888" font-family="Calibri,Arial,sans-serif">Generated 2026-07-06</text>`);
 
 o(`</svg>`);
 document.getElementById("chart").innerHTML = E.join("");
