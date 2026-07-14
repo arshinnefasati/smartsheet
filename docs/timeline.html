@@ -21,7 +21,96 @@
 <div id="chart"></div>
 
 <script>
-const TASKS = [];
+const TASKS = [
+  {
+    "n": "Project Kickoff",
+    "d": "2025-01-14",
+    "s": "2025-01-08",
+    "p": "above",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "Product Requirements\nReview",
+    "d": "2025-01-21",
+    "s": "2025-01-15",
+    "p": "below",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "Impact Alignment",
+    "d": "2025-01-28",
+    "s": "2025-01-22",
+    "p": "above",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "Business Case Approved",
+    "d": "2025-03-14",
+    "s": "2025-03-14",
+    "p": "below",
+    "m": true,
+    "color": "#0089EC"
+  },
+  {
+    "n": "GTS RTE Assigned",
+    "d": "2025-09-12",
+    "s": "2025-09-08",
+    "p": "above",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "GN&T and GTS Dev /\nEngineering Engagement",
+    "d": "2026-02-03",
+    "s": "2025-02-24",
+    "p": "below",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "GTS Low Level Design\nand Grooming",
+    "d": "2026-03-13",
+    "s": "2026-02-02",
+    "p": "above",
+    "m": false,
+    "color": "#00B845"
+  },
+  {
+    "n": "TPD Low Level Design\nand Grooming",
+    "d": "2026-03-13",
+    "s": "2026-02-02",
+    "p": "below",
+    "m": false,
+    "color": "#00B845"
+  },
+  {
+    "n": "Committed Date - GTS\nReceived",
+    "d": "2026-05-15",
+    "s": "2026-05-15",
+    "p": "above",
+    "m": true,
+    "color": "#0089EC"
+  },
+  {
+    "n": "Committed Date - TPD\nReceived",
+    "d": "2026-05-15",
+    "s": "2026-05-15",
+    "p": "below",
+    "m": true,
+    "color": "#0089EC"
+  },
+  {
+    "n": "Development",
+    "d": "2026-07-17",
+    "s": "2026-03-16",
+    "p": "above",
+    "m": false,
+    "color": "#00B845"
+  }
+];
 
 const W      = 1150;
 const H      = 360;
@@ -33,7 +122,7 @@ const BAR_Y  = 165;
 const BAR_H  = 26;
 const BMID   = BAR_Y + BAR_H / 2;
 
-const T0     = new Date("2026-03-01");
+const T0     = new Date("2025-01-01");
 const T1     = new Date("2026-12-31");
 const TSPAN  = T1 - T0;
 
