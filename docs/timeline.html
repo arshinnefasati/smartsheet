@@ -21,48 +21,7 @@
 <div id="chart"></div>
 
 <script>
-const TASKS = [
-  {
-    "n": "GTS Low Level Design\nand Grooming",
-    "d": "2026-07-09",
-    "s": "2026-05-12",
-    "p": "above",
-    "m": false,
-    "color": "#0089EC"
-  },
-  {
-    "n": "GTS Low Level Design\nand Grooming Complete Enough for Development to Begin",
-    "d": "2026-07-10",
-    "s": "2026-07-10",
-    "p": "below",
-    "m": true,
-    "color": "#00B845"
-  },
-  {
-    "n": "Network early (EE) -\nengagement OSS",
-    "d": "2026-08-06",
-    "s": "2026-07-13",
-    "p": "above",
-    "m": false,
-    "color": "#00B845"
-  },
-  {
-    "n": "Development Activities",
-    "d": "2026-09-02",
-    "s": "2026-08-07",
-    "p": "below",
-    "m": false,
-    "color": "#888888"
-  },
-  {
-    "n": "Development",
-    "d": "2026-09-07",
-    "s": "2026-07-13",
-    "p": "above",
-    "m": false,
-    "color": "#888888"
-  }
-];
+const TASKS = [];
 
 const W      = 1150;
 const H      = 360;
@@ -74,7 +33,7 @@ const BAR_Y  = 165;
 const BAR_H  = 26;
 const BMID   = BAR_Y + BAR_H / 2;
 
-const T0     = new Date("2026-07-01");
+const T0     = new Date("2026-03-01");
 const T1     = new Date("2026-12-31");
 const TSPAN  = T1 - T0;
 
