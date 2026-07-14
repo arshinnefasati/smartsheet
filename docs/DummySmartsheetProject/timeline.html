@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Timeline</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Calibri, 'Segoe UI', Arial, sans-serif;
+    background: #F6F0E2;
+    padding: 20px 28px 28px;
+  }
+  p.datestamp { font-size: 9.5px; color: #888; text-align: right; margin-bottom: 6px; }
+  #chart { overflow-x: auto; }
+  svg { display: block; }
+</style>
+</head>
+<body>
+
+<p class="datestamp">Generated 7/14/2026</p>
+<div id="chart"></div>
+
+<script>
+const TASKS = [
+  {
+    "n": "Project Kickoff",
+    "d": "2026-03-19",
+    "s": "2026-03-13",
+    "p": "above",
+    "m": false,
+    "color": "#0089EC"
+  },
+  {
+    "n": "Product Requirements\nReview",
+    "d": "2026-03-26",
+    "s": "2026-03-20",
+    "p": "below",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "Submit and Schedule\nNetwork Planning Front Door Review",
+    "d": "2026-05-05",
+    "s": "2026-04-29",
+    "p": "above",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "Business Case Approved",
+    "d": "2026-05-19",
+    "s": "2026-05-19",
+    "p": "below",
+    "m": true,
+    "color": "#888888"
+  },
+  {
+    "n": "GTS FD Approval",
+    "d": "2026-05-26",
+    "s": "2026-05-20",
+    "p": "above",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "Big Team Review prep\n(including and call)",
+    "d": "2026-06-08",
+    "s": "2026-05-26",
+    "p": "below",
+    "m": false,
+    "color": "#888888"
+  },
+  {
+    "n": "Committed Date - GTS\nReceived",
+    "d": "2026-09-22",
+    "s": "2026-09-22",
+    "p": "above",
+    "m": true,
+    "color": "#888888"
+  },
+  {
+    "n": "Committed Date - TPD\nReceived",
+    "d": "2026-09-22",
+    "s": "2026-09-22",
+    "p": "below",
+    "m": true,
+    "color": "#888888"
+  },
+  {
+    "n": "Committed Date - NI\nReceived",
+    "d": "2026-09-22",
+    "s": "2026-09-22",
+    "p": "above",
+    "m": true,
+    "color": "#888888"
+  },
+  {
+    "n": "Production Testing\nSignoff",
+    "d": "2026-11-03",
+    "s": "2026-11-03",
+    "p": "below",
+    "m": true,
+    "color": "#888888"
+  },
+  {
+    "n": "System and/or E2E or\nIntegration, Lower Env Testing Signoff",
+    "d": "2026-12-08",
+    "s": "2026-12-08",
+    "p": "above",
+    "m": true,
+    "color": "#888888"
+  },
+  {
+    "n": "Technology Operational\nReady",
+    "d": "2026-12-08",
+    "s": "2026-12-08",
+    "p": "below",
+    "m": true,
+    "color": "#888888"
+  },
+  {
+    "n": "Project End",
+    "d": "2026-12-22",
+    "s": "2026-12-22",
+    "p": "above",
+    "m": true,
+    "color": "#888888"
+  }
+];
+
+const W      = 1150;
+const H      = 360;
+const ML     = 40;
+const MR     = 40;
+const TLW    = W - ML - MR;
+
+const BAR_Y  = 165;
+const BAR_H  = 26;
+const BMID   = BAR_Y + BAR_H / 2;
+
+const T0     = new Date("2026-03-01");
+const T1     = new Date("2026-12-31");
+const TSPAN  = T1 - T0;
+
+const TODAY  = new Date("2026-07-14");
+
+const LVL    = [60, 100, 140];
+const LH     = 14;
+const FS     = 10.5;
+const MIN_GAP= 60;
+
+const NAVY   = "#000000";
+const BLUE   = "#0089EC";
+const GREEN  = "#00B845";
+const AMBER  = "#FFCD27";
+const RED       = "#EE001E";
+const TODAY_LINE= "#59D186";
+const GRAY   = "#888888";
+const DARK   = "#1a1a1a";
+
+function dateX(dateStr) {
+  return ML + ((new Date(dateStr) - T0) / TSPAN) * TLW;
+}
+function fmt(dateStr) {
+  const d = new Date(dateStr + "T12:00:00");
+  return `${d.getMonth()+1}/${d.getDate()}`;
+}
+
+TASKS.sort((a, b) => new Date(a.d) - new Date(b.d));
+const slotRight = { above: [], below: [] };
+
+TASKS.forEach(t => {
+  const x   = dateX(t.d);
+  const arr = slotRight[t.p];
+  let lvl   = -1;
+  for (let i = 0; i < arr.length; i++) {
+    if (x - arr[i] >= MIN_GAP) { lvl = i; arr[i] = x; break; }
+  }
+  if (lvl === -1) { lvl = arr.length; arr.push(x); }
+  t.lvl = Math.min(lvl, LVL.length - 1);
+});
+
+const E = [];
+const o = s => E.push(s);
+
+function diamond(cx, cy, r, color) {
+  o(`<polygon points="${cx},${cy-r} ${cx+r},${cy} ${cx},${cy+r} ${cx-r},${cy}" fill="${color}"/>`);
+}
+function text(x, y, txt, size, color, weight, anchor) {
+  const fw = weight || "normal";
+  const ta = anchor || "middle";
+  o(`<text x="${x}" y="${y}" text-anchor="${ta}" font-size="${size}" font-weight="${fw}" fill="${color}" font-family="Calibri,Arial,sans-serif">${txt}</text>`);
+}
+function dateBox(cx, cy, txt) {
+  o(`<text x="${cx}" y="${cy}" text-anchor="middle" font-size="10" font-weight="bold" fill="${DARK}" font-family="Calibri,Arial,sans-serif">${txt}</text>`);
+}
+
+o(`<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">`);
+o(`<rect width="${W}" height="${H}" fill="#F6F0E2"/>`);
+o(`<rect x="${ML}" y="${BAR_Y}" width="${TLW}" height="${BAR_H}" fill="${NAVY}" rx="4"/>`);
+
+const todayX = Math.min(dateX(TODAY.toISOString().slice(0,10)), ML + TLW);
+o(`<line x1="${ML}" y1="${BMID}" x2="${todayX}" y2="${BMID}" stroke="${TODAY_LINE}" stroke-width="5" stroke-linecap="round"/>`);
+
+const MN = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const startM = T0.getMonth() + 1;
+const endM   = T1.getMonth() + 1;
+const startY = T0.getFullYear();
+const endY   = T1.getFullYear();
+for (let yr = startY; yr <= endY; yr++) {
+  const mStart = (yr === startY) ? startM : 1;
+  const mEnd   = (yr === endY)   ? endM   : 12;
+  for (let m = mStart; m <= mEnd; m++) {
+    const d1  = new Date(yr, m - 1, 1);
+    const d2  = new Date(yr, m,     0);
+    const x1  = ML + ((d1 - T0) / TSPAN) * TLW;
+    const x2  = ML + ((d2 - T0) / TSPAN) * TLW;
+    const cx  = (x1 + x2) / 2;
+    if (d1 > T0) {
+      o(`<line x1="${x1}" y1="${BAR_Y+4}" x2="${x1}" y2="${BAR_Y+BAR_H-4}" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>`);
+    }
+    text(cx, BMID + 4, MN[m - 1], 11, "white", "bold");
+  }
+}
+
+TASKS.forEach(t => {
+  const tx    = dateX(t.d);
+  const above = t.p === "above";
+  const DR    = t.m ? 9 : 7;
+  const color = t.color || GRAY;
+  const stem  = LVL[t.lvl];
+  const lines = t.n.split("\n");
+  const dateStr = fmt(t.d);
+
+  const sy0 = above ? BAR_Y : BAR_Y + BAR_H;
+  const sy1 = above ? BAR_Y - stem : BAR_Y + BAR_H + stem;
+  o(`<line x1="${tx}" y1="${sy0}" x2="${tx}" y2="${sy1}" stroke="${color}" stroke-width="1.3"/>`);
+  diamond(tx, sy0, DR, color);
+
+  if (above) {
+    const nameBtm = sy1 - 6;
+    for (let li = 0; li < lines.length; li++) {
+      const y = nameBtm - (lines.length - 1 - li) * LH;
+      text(tx, y, lines[li], FS, DARK);
+    }
+    dateBox(tx, nameBtm - lines.length * LH - 6, dateStr);
+  } else {
+    const nameTop = sy1 + 6;
+    for (let li = 0; li < lines.length; li++) {
+      text(tx, nameTop + (li + 1) * LH, lines[li], FS, DARK);
+    }
+    dateBox(tx, nameTop + (lines.length + 1) * LH + 6, dateStr);
+  }
+});
+
+// Legend inside SVG
+const LEG_ITEMS = [
+  [BLUE,  "Complete"],
+  [GREEN, "On Track"],
+  [AMBER, "At Risk"],
+  [RED,   "Jeopardy"],
+  [GRAY,  "Not Started / On Hold"],
+];
+const legY   = H - 18;
+const legGap = TLW / LEG_ITEMS.length;
+LEG_ITEMS.forEach(([c, lbl], i) => {
+  const lx = ML + i * legGap + legGap / 2;
+  const r  = 5;
+  o(`<polygon points="${lx},${legY-r} ${lx+r},${legY} ${lx},${legY+r} ${lx-r},${legY}" fill="${c}"/>`);
+  o(`<text x="${lx+r+5}" y="${legY+4}" text-anchor="start" font-size="9.5" fill="${DARK}" font-family="Calibri,Arial,sans-serif">${lbl}</text>`);
+});
+
+// Date stamp
+o(`<text x="${W - MR}" y="14" text-anchor="end" font-size="9" fill="#888888" font-family="Calibri,Arial,sans-serif">Generated 2026-07-14</text>`);
+
+o(`</svg>`);
+document.getElementById("chart").innerHTML = E.join("");
+</script>
+
+<p style="margin-top:8px; font-size:9px; color:#888;">Green line = progress to today &nbsp;|&nbsp; Source: Smartsheet</p>
+
+</body>
+</html>
