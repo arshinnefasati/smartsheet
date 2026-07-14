@@ -23,107 +23,43 @@
 <script>
 const TASKS = [
   {
-    "n": "Project Kickoff",
-    "d": "2026-03-19",
-    "s": "2026-03-13",
+    "n": "GTS Low Level Design\nand Grooming",
+    "d": "2026-07-09",
+    "s": "2026-05-12",
     "p": "above",
     "m": false,
     "color": "#0089EC"
   },
   {
-    "n": "Product Requirements\nReview",
-    "d": "2026-03-26",
-    "s": "2026-03-20",
+    "n": "GTS Low Level Design\nand Grooming Complete Enough for Development to Begin",
+    "d": "2026-07-10",
+    "s": "2026-07-10",
+    "p": "below",
+    "m": true,
+    "color": "#00B845"
+  },
+  {
+    "n": "Network early (EE) -\nengagement OSS",
+    "d": "2026-08-06",
+    "s": "2026-07-13",
+    "p": "above",
+    "m": false,
+    "color": "#00B845"
+  },
+  {
+    "n": "Development Activities",
+    "d": "2026-09-02",
+    "s": "2026-08-07",
     "p": "below",
     "m": false,
     "color": "#888888"
   },
   {
-    "n": "Submit and Schedule\nNetwork Planning Front Door Review",
-    "d": "2026-05-05",
-    "s": "2026-04-29",
+    "n": "Development",
+    "d": "2026-09-07",
+    "s": "2026-07-13",
     "p": "above",
     "m": false,
-    "color": "#888888"
-  },
-  {
-    "n": "Business Case Approved",
-    "d": "2026-05-19",
-    "s": "2026-05-19",
-    "p": "below",
-    "m": true,
-    "color": "#888888"
-  },
-  {
-    "n": "GTS FD Approval",
-    "d": "2026-05-26",
-    "s": "2026-05-20",
-    "p": "above",
-    "m": false,
-    "color": "#888888"
-  },
-  {
-    "n": "Big Team Review prep\n(including and call)",
-    "d": "2026-06-08",
-    "s": "2026-05-26",
-    "p": "below",
-    "m": false,
-    "color": "#888888"
-  },
-  {
-    "n": "Committed Date - GTS\nReceived",
-    "d": "2026-09-22",
-    "s": "2026-09-22",
-    "p": "above",
-    "m": true,
-    "color": "#888888"
-  },
-  {
-    "n": "Committed Date - TPD\nReceived",
-    "d": "2026-09-22",
-    "s": "2026-09-22",
-    "p": "below",
-    "m": true,
-    "color": "#888888"
-  },
-  {
-    "n": "Committed Date - NI\nReceived",
-    "d": "2026-09-22",
-    "s": "2026-09-22",
-    "p": "above",
-    "m": true,
-    "color": "#888888"
-  },
-  {
-    "n": "Production Testing\nSignoff",
-    "d": "2026-11-03",
-    "s": "2026-11-03",
-    "p": "below",
-    "m": true,
-    "color": "#888888"
-  },
-  {
-    "n": "System and/or E2E or\nIntegration, Lower Env Testing Signoff",
-    "d": "2026-12-08",
-    "s": "2026-12-08",
-    "p": "above",
-    "m": true,
-    "color": "#888888"
-  },
-  {
-    "n": "Technology Operational\nReady",
-    "d": "2026-12-08",
-    "s": "2026-12-08",
-    "p": "below",
-    "m": true,
-    "color": "#888888"
-  },
-  {
-    "n": "Project End",
-    "d": "2026-12-22",
-    "s": "2026-12-22",
-    "p": "above",
-    "m": true,
     "color": "#888888"
   }
 ];
@@ -138,7 +74,7 @@ const BAR_Y  = 165;
 const BAR_H  = 26;
 const BMID   = BAR_Y + BAR_H / 2;
 
-const T0     = new Date("2026-03-01");
+const T0     = new Date("2026-07-01");
 const T1     = new Date("2026-12-31");
 const TSPAN  = T1 - T0;
 
